@@ -1,0 +1,61 @@
+[
+  {
+    "id": "home",
+    "title": "Home",
+    "url": "/",
+    "children": [
+      {
+        "id": "home1",
+        "title": "Homepage1",
+        "url": "/home1"
+      },
+      {
+        "id": "home2",
+        "title": "Homepage2",
+        "url": "/home2"
+      },
+      {
+        "id": "home3",
+        "title": "Homepage3",
+        "url": "/home3"
+      }
+    ]
+  },
+  {
+    "id": "markets",
+    "title": "Markets",
+    "url": "/markets"
+  },
+  {
+    "id": "company",
+    "title": "Company",
+    "url": "/company",
+    "children": [
+      {
+        "id": "about",
+        "title": "About",
+        "url": "/about"
+      },
+      {
+        "id": "blog",
+        "title": "Blog",
+        "url": "/blog"
+      },
+      {
+        "id": "career",
+        "title": "Career",
+        "url": "/career"
+      },
+      {
+        "id": "contact",
+        "title": "Contact",
+        "url": "/contact"
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "title": "Education",
+    "url": "/education"
+  }
+]

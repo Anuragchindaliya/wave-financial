@@ -1,0 +1,35 @@
+[
+    {
+        "id":"first",
+        "background":"assets/img/in-slideshow-image-1.jpg",
+        "title":"Award-winning Products and Trading platforms",
+        "desc":"Tap into the world's markets and explore endless trading opportunities with tight spreads and no commission.",
+        "btn":{
+            "url":"/booknow",
+            "text":"Discover it now",
+            "icon":"fas fa-scroll"
+        }
+    },
+    {
+        "id":"two",
+        "background":"assets/img/in-slideshow-image-2.jpg",
+        "title":"Multi-regulated Global Forex and Shares Broker",
+        "desc":"A trusted destination for traders worldwide, Authorised by FCA, ASIC & FSCA with multi-lingual support 24/5.",
+        "btn":{
+            "url":"/apointment",
+            "text":"Discover it now",
+            "icon":"fas fa-scroll"
+        }
+    },
+    {
+        "id":"three",
+        "background":"assets/img/in-slideshow-image-3.jpg",
+        "title":"Trade Shares and Forex with Financial Thinking",
+        "desc":"Access 40,000+ instruments – across asset classNamees – to trade, hedge and invest from a single account.",
+        "btn":{
+            "url":"/booknow",
+            "text":"Discover it now",
+            "icon":"fas fa-scroll"
+        }
+    }
+]

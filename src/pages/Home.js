@@ -1,3 +1,5 @@
+import slider from "database/slider.json";
+import {Link} from "react-router-dom";
 
 function Home(){
     return (
@@ -7,7 +9,47 @@ function Home(){
           <div className="uk-section uk-padding-remove-vertical">
             <div className="in-slideshow" data-uk-slideshow>
               <ul className="uk-slideshow-items uk-light">
-                <li>
+                {slider.map((slide)=>{
+                  return <li>
+                  <div className="uk-position-cover">
+                    <img
+                      src={slide.background}
+                      data-src={slide.background}
+                      alt="slideshow1"
+                      data-uk-cover
+                      width="1920"
+                      height="700"
+                      data-uk-img
+                    />
+                  </div>
+                  <span></span>
+                  <div className="uk-container">
+                    <div className="uk-grid" data-uk-grid>
+                      <div className="uk-width-3-5@m">
+                        <div className="uk-overlay">
+                          <h1>
+                            {slide.title}
+                          </h1>
+                          <p className="uk-text-lead uk-visible@m">
+                            {slide.desc}
+                          </p>
+                          <Link
+                            to={slide.btn.url}
+                            className="uk-button uk-button-primary uk-border-rounded uk-visible@m"
+                          >
+                            <i className={`${slide.btn.icon} uk-margin-small-right`}></i>
+                            {slide.btn.text}
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                
+                }
+
+                )}
+                {/* <li>
                   <div className="uk-position-cover">
                     <img
                       src="assets/img/in-lazy.gif"
@@ -116,6 +158,7 @@ function Home(){
                     </div>
                   </div>
                 </li>
+               */}
               </ul>
               <div className="uk-container uk-light">
                 <ul className="uk-slideshow-nav uk-dotnav uk-position-bottom-center"></ul>

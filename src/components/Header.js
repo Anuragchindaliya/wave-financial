@@ -31,11 +31,9 @@ function Header() {
                     <img
                       className="uk-margin-small-right in-offset-top-10"
                       src={logo1}
-                      data-src="assets/img/in-logo-1.svg"
                       alt="wave"
                       width="134"
                       height="23"
-                      data-uk-img
                     />
                   </Link>
                   {/* <!-- module logo begin --> */}
@@ -45,7 +43,7 @@ function Header() {
                 <ul className="uk-navbar-nav uk-visible@m">
                   {menus.map((menu) => {
                     return (
-                      <li>
+                      <li key={menu.id}>
                         <Link to={menu.url}>
                           {menu.title}
                           {menu.children ? (
@@ -58,7 +56,7 @@ function Header() {
                             <ul className="uk-nav uk-navbar-dropdown-nav">
                               {menu.children.map((children) => {
                                 return (
-                                  <li>
+                                  <li key={children.id}>
                                     <Link to={children.url}>{children.title}</Link>
                                   </li>
                                 );

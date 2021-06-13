@@ -1,6 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
+import 'assets/css/vendors/uikit.min.scss';
+import 'assets/css/style.scss';
+// import 'assets/fonts/rubik-v9-latin-500.woff2';
+
+
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

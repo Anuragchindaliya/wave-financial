@@ -233,9 +233,10 @@ function Footer(){
             <a
               href="#top"
               className="in-totop fas fa-chevron-up"
+              title="Go to top"
               data-uk-scroll
             >
-              Top
+              
             </a>
           </div>
           {/* <!-- module totop begin --> */}

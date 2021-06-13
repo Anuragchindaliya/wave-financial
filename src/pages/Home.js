@@ -10,16 +10,14 @@ function Home(){
             <div className="in-slideshow" data-uk-slideshow>
               <ul className="uk-slideshow-items uk-light">
                 {slider.map((slide)=>{
-                  return <li>
+                  return <li key={slide.id}>
                   <div className="uk-position-cover">
                     <img
                       src={slide.background}
-                      data-src={slide.background}
                       alt="slideshow1"
                       data-uk-cover
                       width="1920"
                       height="700"
-                      data-uk-img
                     />
                   </div>
                   <span></span>
@@ -126,8 +124,8 @@ function Home(){
                 <li>
                   <div className="uk-position-cover">
                     <img
-                      src="img/in-lazy.gif"
-                      data-src="img/in-slideshow-image-3.jpg"
+                      src="assets/img/in-lazy.gif"
+                      data-src="assets/img/in-slideshow-image-3.jpg"
                       alt="slideshow3"
                       data-uk-cover
                       width="1920"
@@ -176,12 +174,12 @@ function Home(){
                   <div className="uk-grid uk-grid-small uk-flex uk-flex-middle">
                     <div className="uk-width-auto">
                       <img
-                        src="assets/img/in-lazy.gif"
-                        data-src="assets/img/in-wave-icon-1.svg"
+                        src="assets/img/in-wave-icon-1.svg"
+                        
                         alt="wave-icon"
                         width="48"
                         height="48"
-                        data-uk-img
+                        
                       />
                     </div>
                     <div className="uk-width-expand">
@@ -197,12 +195,12 @@ function Home(){
                   <div className="uk-grid uk-grid-small uk-flex uk-flex-middle">
                     <div className="uk-width-auto">
                       <img
-                        src="img/in-lazy.gif"
-                        data-src="img/in-wave-icon-2.svg"
+                        src="assets/img/in-wave-icon-2.svg"
+                        
                         alt="wave-icon"
                         width="48"
                         height="48"
-                        data-uk-img
+                        // data-uk-img
                       />
                     </div>
                     <div className="uk-width-expand">
@@ -217,12 +215,10 @@ function Home(){
                   <div className="uk-grid uk-grid-small uk-flex uk-flex-middle">
                     <div className="uk-width-auto">
                       <img
-                        src="assets/img/in-lazy.gif"
-                        data-src="assets/img/in-wave-icon-3.svg"
+                        src="assets/img/in-wave-icon-3.svg"
                         alt="wave-icon"
                         width="48"
                         height="48"
-                        data-uk-img
                       />
                     </div>
                     <div className="uk-width-expand">
@@ -463,8 +459,8 @@ function Home(){
                       <div className="uk-card uk-card-default uk-card-body uk-border-rounded">
                         <img
                           className="uk-margin-remove-bottom"
-                          src="img/in-lazy.gif"
-                          data-src="img/in-wave-icon-7.svg"
+                          src="assets/img/in-lazy.gif"
+                          data-src="assets/img/in-wave-icon-7.svg"
                           alt="wave-icon"
                           width="52"
                           height="52"
@@ -722,6 +718,7 @@ function Home(){
                       Download from<span>Play Store</span>
                     </span>
                   </a>
+
                   <a
                     href="/#"
                     className="uk-button uk-button-secondary uk-border-rounded in-button-app uk-margin-small-left in-margin-remove-left@s"
@@ -731,6 +728,7 @@ function Home(){
                       Download from<span>App Store</span>
                     </span>
                   </a>
+                  
                   <a
                     href="/#"
                     className="uk-button uk-button-secondary uk-border-rounded uk-visible@m in-button-app uk-margin-small-left"

@@ -1,52 +1,58 @@
-import slider from "database/slider.json";
-import {Link} from "react-router-dom";
+import sliderData from "database/slider.json";
+import featureData from "database/features.json";
+// import sliderfeature from "database/sliderfeature.json";
+import price from "database/price.json";
+import { Link } from "react-router-dom";
+import parser from "html-react-parser";
 
-function Home(){
-    return (
-        <>
+function Home() {
+  // const parser = new DOMParser();
+  const { slider, sliderFeature } = sliderData;
+  const { feature, awards, download,sharePrices } = featureData;
+  return (
+    <>
       <div>
         <main>
           <div className="uk-section uk-padding-remove-vertical">
             <div className="in-slideshow" data-uk-slideshow>
               <ul className="uk-slideshow-items uk-light">
-                {slider.map((slide)=>{
-                  return <li key={slide.id}>
-                  <div className="uk-position-cover">
-                    <img
-                      src={slide.background}
-                      alt="slideshow1"
-                      data-uk-cover
-                      width="1920"
-                      height="700"
-                    />
-                  </div>
-                  <span></span>
-                  <div className="uk-container">
-                    <div className="uk-grid" data-uk-grid>
-                      <div className="uk-width-3-5@m">
-                        <div className="uk-overlay">
-                          <h1>
-                            {slide.title}
-                          </h1>
-                          <p className="uk-text-lead uk-visible@m">
-                            {slide.desc}
-                          </p>
-                          <Link
-                            to={slide.btn.url}
-                            className="uk-button uk-button-primary uk-border-rounded uk-visible@m"
-                          >
-                            <i className={`${slide.btn.icon} uk-margin-small-right`}></i>
-                            {slide.btn.text}
-                          </Link>
+                {slider.map((slide) => {
+                  return (
+                    <li key={slide.id}>
+                      <div className="uk-position-cover">
+                        <img
+                          src={slide.background}
+                          alt="slideshow1"
+                          data-uk-cover
+                          width="1920"
+                          height="700"
+                        />
+                      </div>
+                      <span></span>
+                      <div className="uk-container">
+                        <div className="uk-grid" data-uk-grid>
+                          <div className="uk-width-3-5@m">
+                            <div className="uk-overlay">
+                              <h1>{slide.title}</h1>
+                              <p className="uk-text-lead uk-visible@m">
+                                {slide.desc}
+                              </p>
+                              <Link
+                                to={slide.btn.url}
+                                className="uk-button uk-button-primary uk-border-rounded uk-visible@m"
+                              >
+                                <i
+                                  className={`${slide.btn.icon} uk-margin-small-right`}
+                                ></i>
+                                {slide.btn.text}
+                              </Link>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </li>
-                
-                }
-
-                )}
+                    </li>
+                  );
+                })}
                 {/* <li>
                   <div className="uk-position-cover">
                     <img
@@ -170,16 +176,36 @@ function Home(){
                 className="uk-grid uk-grid-divider uk-child-width-1-2@s uk-child-width-1-4@m in-margin-top@s in-margin-bottom@s"
                 data-uk-grid
               >
-                <div>
+                {sliderFeature.map((feature) => {
+                  return (
+                    <div key={feature.id}>
+                      <div className="uk-grid uk-grid-small uk-flex uk-flex-middle">
+                        <div className="uk-width-auto">
+                          <img
+                            src={feature.icon}
+                            alt="wave-icon"
+                            width="48"
+                            height="48"
+                          />
+                        </div>
+                        <div className="uk-width-expand">
+                          <p>
+                            {parser(feature.title)}
+                            {/* {parser.parseFromString(feature.title, "text/html")} */}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+                {/* <div>
                   <div className="uk-grid uk-grid-small uk-flex uk-flex-middle">
                     <div className="uk-width-auto">
                       <img
                         src="assets/img/in-wave-icon-1.svg"
-                        
                         alt="wave-icon"
                         width="48"
                         height="48"
-                        
                       />
                     </div>
                     <div className="uk-width-expand">
@@ -196,11 +222,9 @@ function Home(){
                     <div className="uk-width-auto">
                       <img
                         src="assets/img/in-wave-icon-2.svg"
-                        
                         alt="wave-icon"
                         width="48"
                         height="48"
-                        // data-uk-img
                       />
                     </div>
                     <div className="uk-width-expand">
@@ -234,12 +258,10 @@ function Home(){
                   <div className="uk-grid uk-grid-small uk-flex uk-flex-middle">
                     <div className="uk-width-auto">
                       <img
-                        src="assets/img/in-lazy.gif"
-                        data-src="assets/img/in-wave-icon-4.svg"
+                        src="assets/img/in-wave-icon-4.svg"
                         alt="wave-icon"
                         width="48"
                         height="48"
-                        data-uk-img
                       />
                     </div>
                     <div className="uk-width-expand">
@@ -250,7 +272,7 @@ function Home(){
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -261,18 +283,49 @@ function Home(){
               <div className="uk-grid">
                 <div className="uk-width-3-4@m">
                   <h1 className="uk-margin-remove-bottom">
-                    Industry-<span className="in-highlight">leading</span>{" "}
-                    prices
+                    {/* Industry-<span className="in-highlight">leading</span>{" "}
+                    prices */}
+                    {parser(price.title)}
                   </h1>
                   <p className="uk-text-lead uk-text-muted uk-margin-small-top uk-margin-bottom">
-                    Get ultra-competitive spreads and commissions across all
-                    asset classNamees. Receive even better rates as your volume
-                    increases.
+                    {price.desc}
                   </p>
                 </div>
               </div>
               <div className="uk-grid-medium uk-grid-match" data-uk-grid>
-                <div className="uk-width-1-2@s uk-width-1-4@m">
+                {/*################### 
+                  card is start from how to pass backround image in card
+                ######################*/}
+
+                {price.pricedesc.map((card) => {
+                  return (
+                    <div
+                      key={card.id}
+                      className="uk-width-1-2@s uk-width-1-4@m"
+                    >
+                      <div
+                        className="uk-card uk-card-default uk-card-body uk-border-rounded uk-background-contain uk-background-bottom-center"
+                        style={{
+                          backgroundImage: `url("assets/img/in-wave-card-bg-1.png")`,
+                        }}
+                      >
+                        <h5 className="uk-margin-remove">
+                          <a href="/#">
+                            {card.title}
+                            <i className="fas fa-chevron-right fa-xs"></i>
+                          </a>
+                        </h5>
+                        <p className="uk-margin-remove">{card.subtitle}</p>
+                        <h1 className="uk-margin-top">{card.num}</h1>
+                        <p className="uk-margin-remove-top uk-margin-bottom">
+                          {card.small}
+                        </p>
+                        <p>{card.desc}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+                {/* <div className="uk-width-1-2@s uk-width-1-4@m">
                   <div
                     className="uk-card uk-card-default uk-card-body uk-border-rounded uk-background-contain uk-background-bottom-center"
                     style={{
@@ -362,7 +415,7 @@ function Home(){
                       options, spot pairs, & more.
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="uk-grid uk-flex uk-flex-center">
                 <div className="uk-width-3-5@m">
@@ -417,12 +470,10 @@ function Home(){
                 <div className="uk-width-1-2@m">
                   <img
                     className="uk-margin-bottom"
-                    src="assets/img/in-lazy.gif"
-                    data-src="assets/img/in-wave-icon-5.svg"
+                    src="assets/img/in-wave-icon-5.svg"
                     alt="wave-icon"
                     width="64"
                     height="64"
-                    data-uk-img
                   />
                   <h1 className="uk-margin-remove">
                     Market <span className="in-highlight">analysis</span> and
@@ -443,12 +494,10 @@ function Home(){
                       <div className="uk-card uk-card-default uk-card-body uk-border-rounded">
                         <img
                           className="uk-margin-remove-bottom"
-                          src="assets/img/in-lazy.gif"
-                          data-src="assets/img/in-wave-icon-6.svg"
+                          src="assets/img/in-wave-icon-6.svg"
                           alt="wave-icon"
                           width="52"
                           height="52"
-                          data-uk-img
                         />
                         <h5 className="uk-margin-small-top">
                           Strategies &amp; Discussions
@@ -459,12 +508,10 @@ function Home(){
                       <div className="uk-card uk-card-default uk-card-body uk-border-rounded">
                         <img
                           className="uk-margin-remove-bottom"
-                          src="assets/img/in-lazy.gif"
-                          data-src="assets/img/in-wave-icon-7.svg"
+                          src="assets/img/in-wave-icon-7.svg"
                           alt="wave-icon"
                           width="52"
                           height="52"
-                          data-uk-img
                         />
                         <h5 className="uk-margin-small-top">
                           Forecasts &amp; Educations
@@ -477,12 +524,10 @@ function Home(){
                   <div className="uk-inline uk-dark in-wave-video uk-margin-small-bottom">
                     <img
                       className="uk-border-rounded uk-width-1-1"
-                      src="assets/img/in-lazy.gif"
-                      data-src="assets/img/in-wave-image-1.jpg"
+                      src="assets/img/in-wave-image-1.jpg"
                       alt="wave-video"
                       width="533"
                       height="355"
-                      data-uk-img
                     />
                     <div className="uk-position-center">
                       <a href="#modal-media-youtube" data-uk-toggle>
@@ -522,8 +567,9 @@ function Home(){
               <div className="uk-grid uk-flex uk-flex-center">
                 <div className="uk-width-1-1 uk-text-center">
                   <h1 className="uk-margin-medium-bottom">
-                    <span className="in-highlight">Complete</span> package for
-                    every traders
+                    {/* <span className="in-highlight">Complete</span> package for
+                    every traders */}
+                    {parser(feature.title)}
                   </h1>
                 </div>
                 <div className="uk-width-3-4@m">
@@ -531,7 +577,50 @@ function Home(){
                     className="uk-grid-collapse  uk-child-width-1-2@m in-wave-pricing"
                     data-uk-grid
                   >
-                    <div>
+                    {feature.cards.map((card) => {
+                      return (
+                        <div key={card.id}>
+                          <div
+                            className={`uk-card uk-card-default uk-card-body uk-box-shadow-${card.size}`}
+                          >
+                            <p className="uk-text-small uk-text-uppercase">
+                              {/* Minimum funding */}
+                              {card.smallTxt}
+                              <span className="uk-label uk-border-pill uk-text-small uk-margin-small-left">
+                                {card.price}
+                              </span>
+                            </p>
+                            <h2 className="uk-margin-top uk-margin-remove-bottom">
+                              {card.title}
+                            </h2>
+                            <p className="uk-text-lead uk-text-muted uk-margin-remove-top">
+                              {card.subtitle}
+                            </p>
+                            <hr />
+                            <ul className="uk-list uk-list-bullet">
+                              {card.lists.map((list, index) => {
+                                return <li key={index}>{list}</li>;
+                              })}
+                              {/* <li>One of the established industry leaders</li>
+                          <li>Three decades of trading know-how</li>
+                          <li>Award-winning customer service*</li>
+                          <li>Highly-regarded trader education*</li>
+                          <li>Advanced risk management</li>
+                          <li>Tax-free spread betting profits</li>
+                          <li>Low minimum deposit</li> */}
+                            </ul>
+                            <a
+                              href="/#"
+                              className={`uk-button ${card.btnColor} uk-border-rounded uk-align-center`}
+                            >
+                              {card.btnTxt}
+                              <i className="fas fa-chevron-circle-right fa-xs uk-margin-small-left"></i>
+                            </a>
+                          </div>
+                        </div>
+                      );
+                    })}
+                    {/*<div>
                       <div className="uk-card uk-card-default uk-card-body uk-box-shadow-medium">
                         <p className="uk-text-small uk-text-uppercase">
                           Minimum funding
@@ -565,7 +654,7 @@ function Home(){
                       </div>
                     </div>
                     <div>
-                      <div className="uk-card uk-card-default uk-card-body uk-box-shadow-large">
+                       <div className="uk-card uk-card-default uk-card-body uk-box-shadow-large">
                         <p className="uk-text-small uk-text-uppercase">
                           Minimum funding
                           <span className="uk-label uk-border-pill uk-text-small uk-margin-small-left">
@@ -595,8 +684,8 @@ function Home(){
                           Open an account
                           <i className="fas fa-chevron-circle-right fa-xs uk-margin-small-left"></i>
                         </a>
-                      </div>
-                    </div>
+                      </div> 
+                    </div>*/}
                   </div>
                 </div>
                 <div className="uk-width-1-1">
@@ -604,30 +693,32 @@ function Home(){
                     className="uk-grid-medium uk-child-width-1-2@s uk-child-width-1-5@m uk-text-center uk-margin-large-top"
                     data-uk-grid
                   >
-                    <div>
+                    {awards.map((award, index, arr) => {
+                      const visible =
+                        index === arr.length - 1 ? "uk-visible@m" : "";
+                      return (
+                        <div key={index} className={visible}>
+                          <img
+                            src="assets/img/in-wave-award.svg"
+                            alt="wave-award"
+                            width="71"
+                            height="58"
+                          />
+                          <h6 className="uk-margin-small-top uk-margin-remove-bottom">
+                            {award.title}
+                          </h6>
+                          <p className="uk-text-small uk-margin-remove-top">
+                            {award.desc}
+                          </p>
+                        </div>
+                      );
+                    })}
+                    {/* <div>
                       <img
-                        src="assets/img/in-lazy.gif"
-                        data-src="assets/img/in-wave-award.svg"
+                        src="assets/img/in-wave-award.svg"
                         alt="wave-award"
                         width="71"
                         height="58"
-                        data-uk-img
-                      />
-                      <h6 className="uk-margin-small-top uk-margin-remove-bottom">
-                        Best CFD Broker
-                      </h6>
-                      <p className="uk-text-small uk-margin-remove-top">
-                        TradeON Summit 2020
-                      </p>
-                    </div>
-                    <div>
-                      <img
-                        src="assets/img/in-lazy.gif"
-                        data-src="assets/img/in-wave-award.svg"
-                        alt="wave-award"
-                        width="71"
-                        height="58"
-                        data-uk-img
                       />
                       <h6 className="uk-margin-small-top uk-margin-remove-bottom">
                         Best Trading Experience
@@ -638,12 +729,10 @@ function Home(){
                     </div>
                     <div>
                       <img
-                        src="assets/img/in-lazy.gif"
-                        data-src="assets/img/in-wave-award.svg"
+                        src="assets/img/in-wave-award.svg"
                         alt="wave-award"
                         width="71"
                         height="58"
-                        data-uk-img
                       />
                       <h6 className="uk-margin-small-top uk-margin-remove-bottom">
                         Best Execution Broker
@@ -654,12 +743,10 @@ function Home(){
                     </div>
                     <div>
                       <img
-                        src="assets/img/in-lazy.gif"
-                        data-src="assets/img/in-wave-award.svg"
+                        src="assets/img/in-wave-award.svg"
                         alt="wave-award"
                         width="71"
                         height="58"
-                        data-uk-img
                       />
                       <h6 className="uk-margin-small-top uk-margin-remove-bottom">
                         Best Trading Platform
@@ -670,12 +757,10 @@ function Home(){
                     </div>
                     <div className="uk-visible@m">
                       <img
-                        src="assets/img/in-lazy.gif"
-                        data-src="assets/img/in-wave-award.svg"
+                        src="assets/img/in-wave-award.svg"
                         alt="wave-award"
                         width="71"
                         height="58"
-                        data-uk-img
                       />
                       <h6 className="uk-margin-small-top uk-margin-remove-bottom">
                         Best Broker Asia
@@ -683,7 +768,21 @@ function Home(){
                       <p className="uk-text-small uk-margin-remove-top">
                         iFX EXPO 2020
                       </p>
+                    </div><div>
+                      <img
+                        src="assets/img/in-wave-award.svg"
+                        alt="wave-award"
+                        width="71"
+                        height="58"
+                      />
+                      <h6 className="uk-margin-small-top uk-margin-remove-bottom">
+                        Best CFD Broker
+                      </h6>
+                      <p className="uk-text-small uk-margin-remove-top">
+                        TradeON Summit 2020
+                      </p>
                     </div>
+                     */}
                   </div>
                 </div>
               </div>
@@ -701,15 +800,34 @@ function Home(){
                   }}
                 >
                   <h1 className="uk-margin-remove-bottom">
-                    Start <span className="uk-text-primary">trading</span>
+                    {parser(download.title)}
                   </h1>
                   <p className="uk-text-lead">
-                    on <span className="uk-text-primary">wave</span> mobile app.
+                    {parser(download.subtitle)}
+                    {/* on <span className="uk-text-primary">wave</span> mobile app. */}
                   </p>
                   <p className="uk-margin-small-bottom">
-                    Available on multiple platform
+                    {/* Available on multiple platform */}
+                    {download.smallTxt}
                   </p>
-                  <a
+                  {download.buttons.map((btn,index,arr) => {
+                    const margin = (index===0)?"":"uk-margin-small-left in-margin-remove-left@s";
+                    const visible = index===arr.length-1?"uk-visible@m":"";
+                    return (
+                      
+                      <a key={index}
+                        href="/#"
+                        className={`uk-button uk-button-secondary uk-border-rounded in-button-app ${margin} ${visible}`}
+                      >
+                        <i className="fab fa-google-play fa-2x"></i>
+                        <span className="wrapper">
+                          {/* Download from<span>Play Store</span> */}
+                          {parser(btn.title)}
+                        </span>
+                      </a>
+                    );
+                  })}
+                  {/* <a
                     href="/#"
                     className="uk-button uk-button-secondary uk-border-rounded in-button-app"
                   >
@@ -728,7 +846,7 @@ function Home(){
                       Download from<span>App Store</span>
                     </span>
                   </a>
-                  
+
                   <a
                     href="/#"
                     className="uk-button uk-button-secondary uk-border-rounded uk-visible@m in-button-app uk-margin-small-left"
@@ -737,7 +855,7 @@ function Home(){
                     <span className="wrapper">
                       Download from<span>Microsoft Store</span>
                     </span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -750,7 +868,18 @@ function Home(){
                         className="uk-slider-items uk-child-width-1-3@s uk-child-width-1-5@m uk-text-small uk-text-center"
                         data-uk-grid
                       >
-                        <li>
+                      {sharePrices.map((price,index)=>{
+                        const status = (price.status==='up')?"uk-label-success":"uk-label-danger";
+                        return (
+                          <li key={index}>
+                            {price.title}
+                          <span className={`uk-label ${status} uk-border-pill uk-margin-small-left`}>
+                            <i className="fas fa-caret-up"></i> {parser(price.value)}
+                          </span>
+                        </li>
+                        )
+                      })}
+                        {/* <li>
                           XAUUSD{" "}
                           <span className="uk-label uk-label-success uk-border-pill uk-margin-small-left">
                             <i className="fas fa-caret-up"></i> 1478.81
@@ -805,7 +934,7 @@ function Home(){
                             <i className="fas fa-caret-up"></i> 141.91
                             &nbsp;(+0.12%)
                           </span>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </div>
@@ -817,7 +946,6 @@ function Home(){
         </main>
       </div>
     </>
-    );
-  
+  );
 }
 export default Home;

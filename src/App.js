@@ -18,6 +18,7 @@ import Homepage2 from "./pages/Homepage2";
 import Homepage3 from "./pages/Homepage3";
 import Homepage4 from "./pages/Homepage4";
 import Roadmap from "./pages/Roadmap";
+import Legaldocs from "./pages/Legaldocs";
 
 
 import { BrowserRouter as Router,Route,Switch } from "react-router-dom";
@@ -43,6 +44,7 @@ function App() {
             <Route  path="/home3" component={Homepage3}/>
             <Route  path="/home4" component={Homepage4}/>
             <Route  path="/roadmap" component={Roadmap}/>
+            <Route  path="/legal-docs" component={Legaldocs}/>
            
             
           </Switch>

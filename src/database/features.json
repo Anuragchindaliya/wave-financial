@@ -1,0 +1,141 @@
+{
+  "feature": {
+    "id": "features",
+    "title": " <span class='in-highlight'>Complete</span> package for every traders",
+    "cards": [
+      {
+        "id": "one",
+        "size": "medium",
+        "smallTxt": "MINIMUM FUNDING",
+        "price": "USD 200",
+        "title": "Classic account",
+        "subtitle": "Benefit from industry-leading entry prices",
+        "lists": [
+          "One of the established industry leaders",
+          "Three decades of trading know-how",
+          "Award-winning customer service*",
+          "Highly-regarded trader education*",
+          "Advanced risk management",
+          "Tax-free spread betting profits",
+          "Low minimum deposit"
+        ],
+        "btnTxt": "Open an accounts",
+        "btnUrl": "checkout",
+        "btnColor": "uk-button-default"
+      },
+      {
+        "id": "two",
+        "size": "large",
+        "smallTxt": "MINIMUM FUNDING",
+        "price": "USD 500",
+        "title": "Platinum account",
+        "subtitle": "Receive even tighter spreads and commissions",
+        "lists": [
+          "Award-winning trading platform*",
+          "Wide range of charting tools",
+          "Fast, automated excecution",
+          "Expert news & analysis",
+          "Competitive spreads",
+          "Advanced trading tools",
+          "Tax-free spread betting profits"
+        ],
+        "btnTxt": "Open an account",
+        "btnUrl": "checkout",
+        "btnColor": "uk-button-primary"
+      }
+    ]
+  },
+  "awards": [
+    {
+      "title": "Best CFD Broker",
+      "desc": "TradeON Summit 2020"
+    },
+    {
+      "title": "Best Trading Experience",
+      "desc": "Jordan Forex EXPO 2020"
+    },
+    {
+      "title": "Best Execution Broker",
+      "desc": "Forex EXPO Dubai 2020"
+    },
+    {
+      "title": "Best Trading Platform",
+      "desc": "London Summit 2020"
+    },
+    {
+      "title": "Best Broker Asia",
+      "desc": "iFX EXPO 2020"
+    }
+  ],
+  "download": {
+    "title": "Start <span class='uk-text-primary'>trading</span>",
+    "subtitle": "on <span class='uk-text-primary'>wave</span> mobile app.",
+    "smallTxt": "Available on multiple platform",
+    "buttons": [
+      {
+        "title": "Download from<span>Play Store</span>",
+        "icon": "fab fa-google-play fa-2x",
+        "url": "google.play"
+      },
+      {
+        "title": "Download from<span>App Store</span>",
+        "icon": "fab fa-apple fa-2x",
+        "url": "appstore"
+      },
+      {
+        "title": "Download from<span>Microsoft Store</span>",
+        "icon": "fab fa-windows fa-2x",
+        "url": "microsoft"
+      }
+    ]
+  },
+  "sharePrices":[
+    {
+      "title":"XAUUSD",
+      "status":"up",
+      "value":"1478.81 &nbsp;(+0.28%)"
+    },
+    {
+      "title":"GBPUSD",
+      "status":"down",
+      "value":" 1.3191 &nbsp;(-1.07%)"
+    },
+    {
+      "title":"EURUSD",
+      "status":"down",
+      "value":"1.1159&nbsp;(-0.11%)"
+    },
+    {
+      "title":"USDJPY",
+      "status":"up",
+      "value":"109.59&nbsp;(+0.05%)"
+    },
+    {
+      "title":"USDCAD",
+      "status":"up",
+      "value":"1478.81 &nbsp;(+0.28%)"
+    },
+    {
+      "title":"EURUSD",
+      "status":"down",
+      "value":"1.1159&nbsp;(-0.11%)"
+    },
+    {
+      "title":"USDJPY",
+      "status":"up",
+      "value":"109.59&nbsp;(+0.05%)"
+    },
+    {
+      "title":"EURUSD",
+      "status":"down",
+      "value":"1.1159&nbsp;(-0.11%)"
+    },
+    {
+      "title":"USDJPY",
+      "status":"up",
+      "value":"109.59&nbsp;(+0.05%)"
+    }
+    
+  ]
+
+}

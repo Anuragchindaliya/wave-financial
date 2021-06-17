@@ -1,0 +1,44 @@
+
+    {
+        "id":"price",
+        "title":"Industry-<span class='in-highlight'>leading</span> prices",
+        "desc":"Get ultra-competitive spreads and commissions across all asset classNamees. Receive even better rates as your volume increases. check it",
+        "pricedesc":[
+            {
+                "id":"one",
+                "title":"FX",
+                "subtitle":"Spread as low as",
+                "num":"0.2",
+                "small":"pip",
+                "desc":"Trade 182 FX spot pairs and 140 forwards across majors, minors, exotics and metals.",
+                "bg":"assets/img/in-wave-card-bg-1.png"
+            },
+            {
+                "id":"two",
+                "title":"CFDs",
+                "subtitle":"Spread from",
+                "num":"0.4",
+                "small":"on US500",
+                "desc":"Go long or short on 9,000+ instruments with tight spreads & low commissions.",
+                "bg":"assets/img/in-wave-card-bg-1.png"
+            },
+            {
+                "id":"three",
+                "title":"Stocks",
+                "subtitle":"Commissions from",
+                "num":"$3",
+                "small":"on US stocks on US500",
+                "desc":"Access 19,000+ stocks across core and emerging markets on 36 exchanges worldwide.",
+                "bg":"assets/img/in-wave-card-bg-1.png"
+            },
+            {
+                "id":"four",
+                "title":"Commodities",
+                "subtitle":"Commission as low as",
+                "num":"$1.25",
+                "small":"per lot",
+                "desc":"Trade a wide range of commodities as CFDs, futures, options, spot pairs, & more.",
+                "bg":"assets/img/in-wave-card-bg-1.png"
+            }
+        ]
+    }

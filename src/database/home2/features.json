@@ -1,0 +1,22 @@
+[
+    {
+        "icon":"fas fa-award",
+        "title":"Best reputation",
+        "desc":"Adipisci sed quia numquam eius modi tempora incidunt ut labore et dolore consequuntur magni dolores."
+    },
+    {
+        "icon":"fas fa-tools",
+        "title":"Advanced tools",
+        "desc":"Adipisci sed quia numquam eius modi tempora incidunt ut labore et dolore consequuntur magni dolores."
+    },
+    {
+        "icon":"fas fa-users",
+        "title":"480,000+ clients",
+        "desc":"Adipisci sed quia numquam eius modi tempora incidunt ut labore et dolore consequuntur magni dolores."
+    },
+    {
+        "icon":"fas fa-building",
+        "title":"Worldwide office",
+        "desc":"Adipisci sed quia numquam eius modi tempora incidunt ut labore et dolore consequuntur magni dolores."
+    }
+]

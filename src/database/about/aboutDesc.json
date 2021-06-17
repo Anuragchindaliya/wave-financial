@@ -1,0 +1,17 @@
+[
+    {
+        "icon":"fas fa-leaf",
+        "title":"Philosophy",
+        "desc":"At vero eos etme accusamus iusto odio ent dignissimos deleniti atque corrupti quos ducimus moll quilla blanditiis expedita est distinctio."
+    },
+    {
+        "icon":"fas fa-hourglass-end ",
+        "title":"History",
+        "desc":"At vero eos etme accusamus iusto odio ent dignissimos deleniti atque corrupti quos ducimus moll quilla blanditiis expedita est distinctio."
+    },
+    {
+        "icon":"fas fa-flag",
+        "title":"Culture",
+        "desc":"At vero eos etme accusamus iusto odio ent dignissimos deleniti atque corrupti quos ducimus moll quilla blanditiis expedita est distinctio."
+    }
+]

@@ -1,0 +1,151 @@
+{
+  "footer1": {
+    "id": "section1",
+    "logo": "assets/img/in-logo-2.svg",
+    "subtitle": "Trade with financial thinking.s",
+    "desc": "Imperium Tower (Headquarters) <br /> Jl. Prof Dr Satrio, Kuningan <br />12920<br />Jakarta - Indonesia"
+  },
+  "footer2": [
+    {
+      "id": "menu1",
+      "title": "Markets",
+      "links": [
+        {
+          "id": "link1",
+          "name": "Forex",
+          "url": "forex.com"
+        },
+        {
+          "id": "link2",
+          "name": "Synthetic indices",
+          "url": "Syntetic.com"
+        },
+        {
+          "id": "link3",
+          "name": "Stock indices",
+          "url": "Stock.com"
+        },
+        {
+          "id": "link4",
+          "name": "Commodities",
+          "url": "Commodties.com"
+        }
+      ]
+    },
+    {
+      "id": "menu2",
+      "title": "Resource",
+      "links": [
+        {
+          "id": "link1",
+          "name": "Forex",
+          "url": "forex.com"
+        },
+        {
+          "id": "link2",
+          "name": "Synthetic indices",
+          "url": "Syntetic.com"
+        },
+        {
+          "id": "link3",
+          "name": "Stock indices",
+          "url": "Stock.com"
+        },
+        {
+          "id": "link4",
+          "name": "Commodities",
+          "url": "Commodties.com"
+        }
+      ]
+    },
+    {
+      "id": "menu3",
+      "title": "Company",
+      "links": [
+        {
+          "id": "link1",
+          "name": "Our story",
+          "url": "aboutus"
+        },
+        {
+          "id": "link2",
+          "name": "Our leadership",
+          "url": "leadershop"
+        },
+        {
+          "id": "link3",
+          "name": "Contact us",
+          "url": "contactus"
+        },
+        {
+          "id": "link4",
+          "name": "Partners",
+          "url": "partners"
+        }
+      ]
+    }
+  ],
+  "footer3": {
+    "id": "footer3",
+    "icon": "fas fa-exclamation-triangle fa-sm uk-text-danger uk-margin-small-right",
+    "title": "Risk warning",
+    "desc": "The financial products offered via this website include digitals, contracts for difference (CFDs), and other complex derivatives and financial products. Trading options may not be suitable for everyone. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage. As a result, the products offered on this website may not be suitable for all investors because of the risk of losing all of your invested capital. You should never invest money that you cannot afford to lose, and never trade with borrowed money. Before trading in the complex financial products offered, please be sure to understand the risks involved and learn about ",
+    "linktext": "Secure and responsible trading.",
+    "url": "securetrade"
+  },
+  "brand": [
+    "assets/img/in-wave-visa.svg",
+    "assets/img/in-wave-mastercard.svg",
+    "assets/img/in-wave-skrill.svg",
+    "assets/img/in-wave-paypal.svg",
+    "assets/img/in-wave-neteller.svg"
+  ],
+  "sociallink": [
+    {
+      "id": "youtube",
+      "icon": "youtube",
+      "url": "https://www.youtube.com/"
+    },
+    {
+      "id": "facebook",
+      "icon": "facebook-square",
+      "url": "https://www.facebook.com/"
+    },
+    {
+      "id": "instagram",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/"
+    },
+    {
+      "id": "twitter",
+      "icon": "twitter",
+      "url": "https://www.twitter.com/"
+    }
+  ],
+  "footerlink":[
+    {
+      "name":"Regulations",
+      "url":"Regulations"
+    },
+    {
+      "name":"Legal documents",
+      "url":"Legal-documents"
+    },
+    {
+      "name":"Important information",
+      "url":"Important information"
+    },
+    {
+      "name":"Privacy",
+      "url":"Privacy"
+    },
+    {
+      "name":"Public relations",
+      "url":"Public relations"
+    },
+    {
+      "name":"Careers",
+      "url":"Careers"
+    }
+  ]
+}

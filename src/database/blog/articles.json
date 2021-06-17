@@ -1,0 +1,52 @@
+[
+    {
+        "title":"Here’s what is driving GM’s reported plans to develop a commercial electric van",
+        "desc":"GM’s electric offensive to bring at least 20 new EVs to market by 2023 reportedly includes a commercial van. Reuters reported Thursday that the company is developing an electric ...",
+        "articleImg":"assets/img/in-blog-image-10.jpg",
+        "authorImg":"assets/img/in-team-5.png",
+        "authorName":"Jeffrey Reyes",
+        "publishedTime":"May 21, 2020",
+        "niche":"Automotive",
+        "url":"singleArticle"
+    },
+    {
+        "title":" Sony buys $400m stake in China’s Bilibili",
+        "desc":"After a series of previous projects together, Sony has secured a ...",
+        "articleImg":"assets/img/in-blog-image-2.jpg",
+        "authorImg":"assets/img/in-team-2.png",
+        "authorName":"Arthur Parker",
+        "publishedTime":"May 21, 2020",
+        "niche":"Investments",
+        "url":"singleArticle"
+    },
+    {
+        "title":"50 rising startups in Southeast Asia",
+        "desc":"Which are the startups that are on the path to becoming the next big ...",
+        "articleImg":"assets/img/in-blog-image-10.jpg",
+        "authorImg":"assets/img/in-team-9.png",
+        "authorName":"Raymond Patel",
+        "publishedTime":"April 26, 2020",
+        "niche":"Startups",
+        "url":"blog-article.html"
+    },
+    {
+        "title":"Grab names new chief financial officer",
+        "desc":"Ride-hailing giant Grab announced it has appointed corporate finance ...",
+        "articleImg":"assets/img/in-blog-image-10.jpg",
+        "authorImg":"assets/img/in-team-3.png",
+        "authorName":"Evelyn Mason",
+        "publishedTime":"April 13, 2020",
+        "niche":"Startups",
+        "url":"blog-article.html"
+    },
+    {
+        "title":"Monaco launches now tourism campaign",
+        "desc":"With more than three billion people around the world under lockdown ...",
+        "articleImg":"assets/img/in-blog-image-10.jpg",
+        "authorImg":"assets/img/in-team-8.png",
+        "authorName":"Timothy Watkins",
+        "publishedTime":"April 7, 2020",
+        "niche":"Travels",
+        "url":"blog-article.html"
+    }
+]

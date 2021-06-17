@@ -1,0 +1,43 @@
+[
+  {
+    "icon": "fas fa-file",
+    "title": "Terms of Service",
+    "desc": "Read the Terms of Service and License Agreement for Blockit as well as our BlockitApp &amp; Developer Agreements.",
+    "links": [
+      {
+        "title": "License Agreement",
+        "url": "license"
+      },
+      {
+        "title": "Term of Services for Blockit Trade",
+        "url": "tradeService"
+      }
+    ]
+  },
+  {
+    "icon": "fas fa-globe",
+    "title": "Policies",
+    "desc": "Find out more about what information we collect at Blockit, how we use it, and what control you have over your data.",
+    "links": [
+      {
+        "title": "Privacy Statement",
+        "url": "privacy"
+      }
+    ]
+  },
+  {
+    "icon": "fas fa-shield-alt",
+    "title": "Security",
+    "desc": "Learn more about how we keep your work and personal data safe when you’re using our services.",
+    "links": [
+      {
+        "title": "Blockit Trade Security",
+        "url": "security"
+      },
+      {
+        "title": "Responsible Disclosure Policy",
+        "url":"policy"
+      }
+    ]
+  }
+]

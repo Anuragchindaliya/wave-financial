@@ -1,0 +1,20 @@
+[
+    {
+        "title":"Beginner Course",
+        "icon":"fas fa-users",
+        "desc":"Learn the basic concepts of forex trading, what this market is all about, and why you should be a part of it.",
+        "url":"beginners"
+    },
+    {
+        "title":"Trading Tools",
+        "icon":"fas fa-tools",
+        "desc":"Familiarize yourself with advanced strategies and Btrade's trading toolset. Take your trading to the next level.",
+        "url":"trading"
+    },
+    {
+        "title":"Stocks and CFDs",
+        "icon":"fas fa-chart-area",
+        "desc":"Discover the world of CFD trading: The ins &amp; outs of the CFD market, relevant information and market dynamics.",
+        "url":"stocks"
+    }
+]

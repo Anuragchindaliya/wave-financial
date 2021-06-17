@@ -1,0 +1,20 @@
+[
+    {
+        "title":"Our oppurtinity",
+        "desc":"Excepteur sint occaecat cupidatat non proident sunt in culpa qui anim officia.",
+        "btnTxt":"Watch the video",
+        "btnUrl":"youtube.com"
+    },
+    {
+        "title":"Our team",
+        "desc":"Architecto beatae vitae dicta sunt explicabo ipsam memo voluptatem quia voluptas.",
+        "btnTxt":"Meet the team",
+        "btnUrl":"joinsocial"
+    },
+    {
+        "title":"Our culture",
+        "desc":"Corporis suscipit laboriosa nisi ut aliquid ex ea commodi consequatur pariatur.",
+        "btnTxt":"See our values",
+        "btnUrl":"checkresult"
+    }
+]

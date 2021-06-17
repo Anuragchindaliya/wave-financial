@@ -1,4 +1,5 @@
-function Roadmap() {
+import timeline from "database/roadmap/timeline.json";
+const Roadmap=()=> {
     return (
 
       <main>
@@ -15,7 +16,38 @@ function Roadmap() {
               <div className="uk-width-1-1 in-timeline-1">
                 <hr />
                 <div className="uk-grid-medium uk-child-width-1-1 uk-child-width-1-3@m" data-uk-grid>
-                  <div>
+
+                  {timeline.map(card=>{
+                    return(
+                      <div>
+                    <div className="in-timeline-branch">
+                      <div className="uk-flex">
+                        <i className={`${card.icon} fa-lg in-icon-wrap`} />
+                        <div className="in-timeline-title uk-flex uk-flex-middle">
+                          <h4 className="uk-margin-remove-bottom">{card.date}</h4>
+                          <span className={`uk-label ${card.badgeColor} uk-text-small uk-border-rounded`}>completed</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="uk-box-shadow-small uk-width-expand">
+                      <div className="uk-card uk-card-default uk-card-body uk-card-small uk-border-rounded">
+                        <ul className="uk-list uk-list-bullet in-list-check">
+                          {card.lists.map(list=>{
+                            return(
+                              <li>{list}</li>
+                            )
+                          })}
+                          {/* <li>Wireframe</li>
+                          <li>Design</li>
+                          <li>Documentation</li> */}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                    )
+                  })}
+
+                  {/* <div>
                     <div className="in-timeline-branch">
                       <div className="uk-flex">
                         <i className="fas fa-clipboard-check fa-lg in-icon-wrap" />
@@ -35,6 +67,7 @@ function Roadmap() {
                       </div>
                     </div>
                   </div>
+
                   <div>
                     <div className="in-timeline-branch">
                       <div className="uk-flex">
@@ -56,6 +89,8 @@ function Roadmap() {
                       </div>
                     </div>
                   </div>
+
+
                   <div>
                     <div className="in-timeline-branch">
                       <div className="uk-flex">
@@ -77,7 +112,9 @@ function Roadmap() {
                         </ul>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
+
+
                 </div>
               </div>
             </div>

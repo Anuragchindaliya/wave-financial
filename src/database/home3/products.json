@@ -1,0 +1,42 @@
+[
+    {
+        "iconColor":"orange",
+        "iconTxt":"EQ",
+        "title":"Stocks"
+    },
+    {
+        "iconColor":"green",
+        "iconTxt":"ETF",
+        "title":"ETFs"
+    },
+    {
+        "iconColor":"navy",
+        "iconTxt":"BO",
+        "title":"Bonds"
+    },
+    {
+        "iconColor":"purple",
+        "iconTxt":"MF",
+        "title":"Mutual Funds"
+    },
+    {
+        "iconColor":"blue",
+        "iconTxt":"FX",
+        "title":"Forex"
+    },
+    {
+        "iconColor":"red",
+        "iconTxt":"CFD",
+        "title":"CFDs"
+    },
+    {
+        "iconColor":"grey",
+        "iconTxt":"COM",
+        "title":"Commodities"
+    },
+    {
+        "iconColor":"gold",
+        "iconTxt":"FU",
+        "title":"Futures"
+    }
+]

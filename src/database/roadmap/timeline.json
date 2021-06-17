@@ -1,0 +1,38 @@
+[
+    {
+        "icon":"fas fa-clipboard-check",
+        "date":"Q4 2019",
+        "badgeColor":"uk-label-success",
+        "badgeTxt":"completed",
+        "lists":[
+            "Wireframe",
+            "Design",
+            "Documentation"
+        ]
+    },
+    {
+        "icon":"fas fa-cog",
+        "date":"Q2 2020",
+        "badgeColor":"",
+        "badgeTxt":"on progress",
+        "lists":[
+            "Chart with base functional",
+            "Launching plans and billings",
+            "Improvement of the rest of the functions of the Chart",
+            "Availability panel"
+        ]
+    },
+    {
+        "icon":"fas fa-flask",
+        "date":"Q3 2020",
+        "badgeColor":"uk-label-warning",
+        "badgeTxt":"planned",
+        "lists":[
+            "Extensions for other popular browsers",
+            "List View for your tasks",
+            "Apps for iOS & Android",
+            "New cool skin for Default View",
+            "Community formation and the subsequent cyclic completion of the product based on the wishes of customers"
+        ]
+    }
+]

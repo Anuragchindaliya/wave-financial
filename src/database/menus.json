@@ -1,61 +1,65 @@
-[
-  {
-    "id": "home",
-    "title": "Home",
-    "url": "/",
-    "children": [
-      {
-        "id": "home2",
-        "title": "Homepage2",
-        "url": "/home2"
-      },
-      {
-        "id": "home3",
-        "title": "Homepage3",
-        "url": "/home3"
-      },
-      {
-        "id": "home4",
-        "title": "Homepage4",
-        "url": "/home4"
-      }
-    ]
-  },
-  {
-    "id": "markets",
-    "title": "Markets",
-    "url": "/markets"
-  },
-  {
-    "id": "company",
-    "title": "Company",
-    "url": "/company",
-    "children": [
-      {
-        "id": "about",
-        "title": "About",
-        "url": "/about"
-      },
-      {
-        "id": "blog",
-        "title": "Blog",
-        "url": "/blog"
-      },
-      {
-        "id": "careers",
-        "title": "Careers",
-        "url": "/careers"
-      },
-      {
-        "id": "contact",
-        "title": "Contact",
-        "url": "/contact"
-      }
-    ]
-  },
-  {
-    "id": "education",
-    "title": "Education",
-    "url": "/education"
-  }
-]
+{
+  "menus": [
+    {
+      "id": "home",
+      "title": "Home",
+      "url": "/",
+      "children": [
+        {
+          "id": "home2",
+          "title": "Homepage2",
+          "url": "/home2"
+        },
+        {
+          "id": "home3",
+          "title": "Homepage3",
+          "url": "/home3"
+        },
+        {
+          "id": "home4",
+          "title": "Homepage4",
+          "url": "/home4"
+        }
+      ]
+    },
+    {
+      "id": "markets",
+      "title": "Markets",
+      "url": "/markets"
+    },
+    {
+      "id": "company",
+      "title": "Company",
+      "url": "/company",
+      "children": [
+        {
+          "id": "about",
+          "title": "About",
+          "url": "/about"
+        },
+        {
+          "id": "blog",
+          "title": "Blog",
+          "url": "/blog"
+        },
+        {
+          "id": "careers",
+          "title": "Careers",
+          "url": "/careers"
+        },
+        {
+          "id": "contact",
+          "title": "Contact",
+          "url": "/contact"
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "url": "/education"
+    }
+  ],
+  "authOption":"yes"
+  
+}

@@ -1,0 +1,82 @@
+[
+    {
+        "designation":"Chief Executive Officer",
+        "profileImg":"assets/img/in-team-1.png",
+        "name":"Cynthia Dixon",
+        "desc":"Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid fugiat.",
+        "social":[
+            {
+                "icon":"fab fa-facebook-f",
+                "url":"facebook.com"
+            },
+            {
+                "icon":"fab fa-twitter",
+                "url":"twiiter.com"
+            },
+            {
+                "icon":"fab fa-linkedin-in",
+                "url":"linkedin.com"
+            }
+        ]
+    },
+    {
+        "designation":"EXECUTIVE ASSISTANT",
+        "profileImg":"assets/img/in-team-2.png",
+        "name":"Arthur Parker",
+        "desc":"Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid fugiat.",
+        "social":[
+            {
+                "icon":"fab fa-facebook-f",
+                "url":"facebook.com"
+            },
+            {
+                "icon":"fab fa-twitter",
+                "url":"twiiter.com"
+            },
+            {
+                "icon":"fab fa-linkedin-in",
+                "url":"linkedin.com"
+            }
+        ]
+    },
+    {
+        "designation":"MARKETING SPECIALIST",
+        "profileImg":"assets/img/in-team-3.png",
+        "name":"Evelyn Mason",
+        "desc":"Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid fugiat.",
+        "social":[
+            {
+                "icon":"fab fa-facebook-f",
+                "url":"facebook.com"
+            },
+            {
+                "icon":"fab fa-twitter",
+                "url":"twiiter.com"
+            },
+            {
+                "icon":"fab fa-linkedin-in",
+                "url":"linkedin.com"
+            }
+        ]
+    },
+    {
+        "designation":"HUMAN RESOURCES",
+        "profileImg":"assets/img/in-team-4.png",
+        "name":"Bryan Greene",
+        "desc":"Nostrum exercitationem ullam corporis suscipit labor samnisi ute aliquid fugiat.",
+        "social":[
+            {
+                "icon":"fab fa-facebook-f",
+                "url":"facebook.com"
+            },
+            {
+                "icon":"fab fa-twitter",
+                "url":"twiiter.com"
+            },
+            {
+                "icon":"fab fa-linkedin-in",
+                "url":"linkedin.com"
+            }
+        ]
+    }
+]

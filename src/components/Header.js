@@ -1,9 +1,34 @@
 import { Link } from "react-router-dom";
 import logo1 from "../assets/img/in-logo-1.svg";
-import menus from "database/menus.json";
+import menuOption from "database/menus.json";
+import parser from "html-react-parser";
+// import {useState,useEffect } from 'react';
 
 function Header() {
+  // console.log(menus);
+  const { menus, authOption } = menuOption;
+  const authBtn = `<div class="uk-navbar-item uk-visible@m in-optional-nav">
+                  <a href="signin.html" class="uk-button uk-button-text">
+                    <i class="fas fa-user-circle uk-margin-small-right"></i>
+                    Log in
+                  </a>
+                  <a
+                    href="/#"
+                    class="uk-button uk-button-primary uk-button-small uk-border-pill"
+                  >
+                    Sign up
+                  </a>
+                </div> `;
   
+  // const [menus,setMenus]=useState([]);
+  // useEffect(()=>{
+  //   fetch("https://q2w.in/wave.php?type=menus")
+  //   .then((res) => res.json())
+  //   .then((json) => {
+  //     setMenus(json);
+  //     console.log(json);
+  //   }).then();
+  // },[]);
   // console.log(menus);
 
   return (
@@ -57,7 +82,9 @@ function Header() {
                               {menu.children.map((children) => {
                                 return (
                                   <li key={children.id}>
-                                    <Link to={children.url}>{children.title}</Link>
+                                    <Link to={children.url}>
+                                      {children.title}
+                                    </Link>
                                   </li>
                                 );
                               })}
@@ -115,7 +142,8 @@ function Header() {
                     </div>
                   </li>
                 </ul>
-                <div className="uk-navbar-item uk-visible@m in-optional-nav">
+                {authOption === "yes" ? parser(authBtn) : ""}
+                {/* <div className="uk-navbar-item uk-visible@m in-optional-nav">
                   <a href="signin.html" className="uk-button uk-button-text">
                     <i className="fas fa-user-circle uk-margin-small-right"></i>
                     Log in
@@ -126,7 +154,7 @@ function Header() {
                   >
                     Sign up
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </nav>
@@ -156,6 +184,7 @@ function Header() {
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>

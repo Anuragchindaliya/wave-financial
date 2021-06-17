@@ -1,0 +1,26 @@
+[
+    {
+        "count":"20",
+        "suffix":"years",
+        "title":"Experience",
+        "desc":"Since 2000"
+    },
+    {
+        "count":"15",
+        "suffix":"years",
+        "title":"UK Regulated",
+        "desc":"Since 2005"
+    },
+    {
+        "count":"18",
+        "suffix":"K",
+        "title":"Order per day",
+        "desc":"Fast execution"
+    },
+    {
+        "count":"24",
+        "suffix":"/5",
+        "title":"Customer support",
+        "desc":"Account manager"
+    }
+]

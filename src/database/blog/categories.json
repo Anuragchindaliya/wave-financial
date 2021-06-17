@@ -1,0 +1,27 @@
+[
+    {
+        "url":"topStories",
+        "name":"Top storiessss",
+        "num":"2"
+    },
+    {
+        "url":"investments",
+        "name":"Investments",
+        "num":"6"
+    },
+    {
+        "url":"opinions",
+        "name":"Opinions",
+        "num":"3"
+    },
+    {
+        "url":"community",
+        "name":"Community",
+        "num":"4"
+    },
+    {
+        "url":"news",
+        "name":"News",
+        "num":"7"
+    }
+]

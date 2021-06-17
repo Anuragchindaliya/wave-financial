@@ -1,0 +1,23 @@
+[
+  {
+    "logo": "assets/img/in-client-testi-3.svg",
+    "text": "Really love the product! It saves so much time and helps a lot in organize our feedback. Very huge potential.",
+    "rName": "Gabrielle Barger",
+
+    "designation": "Help Desk at appium"
+  },
+  {
+    "logo": "assets/img/in-client-testi-4.svg",
+    "text": "This is my one stop shop for sending all Updates to investors, board of directors or even exec team members.",
+    "rName": "Gabrielle Barger",
+
+    "designation": "Cloud Architect at blossom"
+  },
+  {
+    "logo": "assets/img/in-client-testi-5.svg",
+    "text": "Has been a great tool for me on monthly updates & helps to communicate the issues with us.",
+    "rName": "Gabrielle Barger",
+
+    "designation": "Sales Analyst at mailgun"
+  }
+]

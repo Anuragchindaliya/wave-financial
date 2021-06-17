@@ -1,0 +1,22 @@
+[
+    {
+        "id":"one",
+        "title":"Free <br /> analysis tools",
+        "icon":"assets/img/in-wave-icon-1.svg"
+    },
+    {
+        "id":"two",
+        "title":"Fast execution <br />0 commision",
+        "icon":"assets/img/in-wave-icon-2.svg"
+    },
+    {
+        "id":"three",
+        "title":"Low minimum <br /> deposit of $100",
+        "icon":"assets/img/in-wave-icon-3.svg"
+    },
+    {
+        "id":"four",
+        "title":"Over 2,100 <br/>assets to trade",
+        "icon":"assets/img/in-wave-icon-4.svg"
+    }
+]

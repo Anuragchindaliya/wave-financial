@@ -1,0 +1,21 @@
+[
+    {
+        "title":"How-tos & Tutorials",
+        "url":"howto",
+        "desc":"Excepteur sint occaecat cupidatat non proident sunt et expedita",
+        "icon":"fas fa-question"
+    },
+    {
+        "title":"Security and Privacy",
+        "url":"security",
+        "desc":"Similique suculpa officia deserunt mollitia animi dolores ratione",
+        "icon":"fas fa-unlock-alt"
+    },
+    {
+        "title":"Open a Support ticket",
+        "url":"support",
+        "desc":"Voluptatibus maiores alias mauli consequatur aut perferendis",
+        "icon":"fas fa-life-ring"
+    }
+    
+]

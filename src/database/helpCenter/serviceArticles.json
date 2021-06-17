@@ -1,0 +1,34 @@
+[
+    {
+        "title":"Getting started with our product",
+        "num":"5",
+        "icon":"fas fa-book",
+        "author":"Scott Baker",
+        "authorImg":"assets/img/in-team-7.png",
+        "url":"product"
+    },
+    {
+        "title":"Contracts and E-Signatures",
+        "num":"2",
+        "icon":"fas fa-pen-nib",
+        "author":"Timothy Watkins",
+        "authorImg":"assets/img/in-team-8.png",
+        "url":"contracts"
+    },
+    {
+        "title":"Invoicing and Getting paid",
+        "num":"3",
+        "icon":"fas fa-file-invoice",
+        "author":"Peter Jacobs",
+        "authorImg":"assets/img/in-team-6.png",
+        "url":"invoice"
+    },
+    {
+        "title":"Project sources and Tracking",
+        "num":"8",
+        "icon":"fas fa-users",
+        "author":"Evelyn Mason",
+        "authorImg":"assets/img/in-team-3.png",
+        "url":"tracking"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "title":"Investing",
+        "desc":"A wide selection of investment product to help build diversified portfolio",
+        "icon":"fas fa-seedling",
+        "color":"in-card-green"
+    },
+    {
+        "title":"Trading",
+        "desc":"Powerful trading tools, resources, insight and support",
+        "icon":"fas fa-chart-bar",
+        "color":"in-card-blue"
+    },
+    {
+        "title":"Wealth management",
+        "desc":"Dedicated financial consultant to help reach your own specific goals",
+        "icon":"fas fa-chart-pie",
+        "color":"in-card-purple"
+    },
+    {
+        "title":"Investment advisory",
+        "desc":"A wide selection of investing strategies from seasoned portfolio managers",
+        "icon":"fas fa-chalkboard-teacher",
+        "color":"in-card-navy"
+    },
+    {
+        "title":"Smart portfolio",
+        "desc":"A revolutionary, fully-automated investmend advisory services",
+        "icon":"fas fa-funnel-dollar",
+        "color":"in-card-grey"
+    },
+    {
+        "title":"Mutual fund advisor",
+        "desc":"Specialized guidance from independent local advisor for hight-net-worth investors",
+        "icon":"fas fa-handshake",
+        "color":"in-card-orange"
+    }
+]

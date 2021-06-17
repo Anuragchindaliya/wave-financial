@@ -1,0 +1,16 @@
+[
+    {
+        "logo":"assets/img/in-client-testi-1.svg",
+        "text":"The extension makes collecting feedback so much easier! Shipright then really helps us make decisions based on the data we collected.",
+        "rName":"Gabrielle Barger",
+        "rImg":"assets/img/in-testimoni-2.png",
+        "designation":"Help Desk at pushbullet"
+    },
+    {
+        "logo":"assets/img/in-client-testi-2.svg",
+        "text":"Quick, easy, and super helpful to collect and organise feedback from all kinds of channels we use to communicate with our customers.",
+        "rName":"Melvin Cortez",
+        "rImg":"assets/img/in-testimoni-3.png",
+        "designation":"Cloud Architect at stormpath"
+    }
+]

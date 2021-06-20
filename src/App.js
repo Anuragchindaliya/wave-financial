@@ -30,7 +30,7 @@ function App() {
           <ScrollToTop/>
           <Header/>
           <Switch>
-            <Route exact path="/" component={Home}/>
+            <Route exact path="/" component={Home} />
             <Route  path="/markets" component={Markets}/>
             <Route  path="/about" component={About}/>
             <Route  path="/education" component={Education}/>
@@ -45,8 +45,6 @@ function App() {
             <Route  path="/home4" component={Homepage4}/>
             <Route  path="/roadmap" component={Roadmap}/>
             <Route  path="/legal-docs" component={Legaldocs}/>
-           
-            
           </Switch>
           <Footer/>
       </Router>

@@ -20,7 +20,7 @@
     9. vendors
 ------------------------------------------------------------------ */
 /* [ 1. global ] */
-@import "variable.scss";
+@import "./variable.scss";
 html,
 body {
     overflow-x: hidden;
@@ -89,19 +89,8 @@ header {
 
 header .uk-logo {
     margin-top: 5px;
-    color: #fff;
 }
-.uk-logo:hover{
-    color:#fff;
-}
-.black-text{
-    color: $theme-color!important;
-}
-@media screen and (max-width:768px){
-    .uk-logo:hover{
-        color: $theme-color!important;;
-    }   
-}
+
 header .in-header-home {
     background: rgba(0, 0, 0, 0.5);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
@@ -279,7 +268,7 @@ header .uk-card-secondary a:hover {
 .uk-sticky.uk-active a.uk-logo {
     width: 134px;
     height: 23px;
-    // background: url(../img/in-logo-1.svg);
+    background: url(../img/in-logo-1.svg);
     background-size: 99.7%;
     margin-top: -2px;
 }
@@ -1748,7 +1737,7 @@ a.in-generic-email:hover {
     }
 
     .in-margin-remove-left\@s {
-        // margin-left: 0 !important;
+        margin-left: 0 !important;
     }
 
     .in-margin-remove-right\@s {

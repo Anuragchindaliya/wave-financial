@@ -30,7 +30,7 @@
     {
       "id": "company",
       "title": "Company",
-      "url": "/company",
+      "noUrl": true,
       "children": [
         {
           "id": "about",
@@ -60,6 +60,6 @@
       "url": "/education"
     }
   ],
-  "authOption":"yes"
+  "authOption":"no"
   
 }

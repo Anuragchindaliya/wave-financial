@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import logo1 from "../assets/img/in-logo-1.svg";
+import { Link, useLocation } from "react-router-dom";
+// import logo1 from "../assets/img/in-logo-1.svg";
 import menuOption from "database/menus.json";
 import parser from "html-react-parser";
 // import {useState,useEffect } from 'react';
@@ -7,6 +7,31 @@ import parser from "html-react-parser";
 function Header() {
   // console.log(menus);
   const { menus, authOption } = menuOption;
+
+  // console.log(useLocation());
+  const { pathname } = useLocation();
+  var whiteBgClass = `uk-section uk-padding-remove-vertical in-header-home`;
+  // var logo = "assets/img/in-logo-1.svg";
+  var bgImg = ``;
+  var txtColor = "uk-logo";
+
+  if (
+    (pathname !== "/") &
+    (pathname !== "/home2") &
+    (pathname !== "/home3") &
+    (pathname !== "/home4")
+  ) {
+    whiteBgClass = `uk-section uk-padding-remove-vertical in-header-inner uk-background-cover uk-background-top-center`;
+    bgImg = `backgroundImage: 'url("assets/img/in-wave-background-1.png")`;
+    // breadCrumb = `<div class="uk-width-1-1 in-breadcrumb">
+    //         <ul class="uk-breadcrumb uk-text-uppercase">
+    //             <li><a href="index-2.html">Home</a></li>
+    //         </ul>
+    //   </div>`;
+    // logo="assets/img/in-logo-2.svg"
+    txtColor = "uk-logo black-text";
+  }
+
   const authBtn = `<div class="uk-navbar-item uk-visible@m in-optional-nav">
                   <a href="signin.html" class="uk-button uk-button-text">
                     <i class="fas fa-user-circle uk-margin-small-right"></i>
@@ -19,7 +44,7 @@ function Header() {
                     Sign up
                   </a>
                 </div> `;
-  
+
   // const [menus,setMenus]=useState([]);
   // useEffect(()=>{
   //   fetch("https://q2w.in/wave.php?type=menus")
@@ -30,6 +55,9 @@ function Header() {
   //   }).then();
   // },[]);
   // console.log(menus);
+
+  // for white background
+  // style={{backgroundImage: 'url("assets/img/in-wave-background-1.png")'}}
 
   return (
     <div>
@@ -42,7 +70,7 @@ function Header() {
       {/* <!-- preloader end --> */}
       <header>
         {/* <!-- header content begin --> */}
-        <div className="uk-section uk-padding-remove-vertical in-header-home ">
+        <div className={whiteBgClass} style={{ bgImg }}>
           {/* <!-- module navigation begin --> */}
           <nav
             className="uk-navbar-container uk-navbar-transparent"
@@ -52,14 +80,15 @@ function Header() {
               <div className="uk-navbar-left uk-width-auto">
                 <div className="uk-navbar-item">
                   {/* <!-- module logo begin --> */}
-                  <Link className="uk-logo" to="/">
-                    <img
+                  <Link className={txtColor} to="/">
+                    Web2Rise
+                    {/* <img
                       className="uk-margin-small-right in-offset-top-10"
-                      src={logo1}
+                      src={logo}
                       alt="wave"
                       width="134"
                       height="23"
-                    />
+                    /> */}
                   </Link>
                   {/* <!-- module logo begin --> */}
                 </div>
@@ -67,34 +96,93 @@ function Header() {
               <div className="uk-navbar-right uk-width-expand uk-flex uk-flex-right">
                 <ul className="uk-navbar-nav uk-visible@m">
                   {menus.map((menu) => {
-                    return (
-                      <li key={menu.id}>
-                        <Link to={menu.url}>
-                          {menu.title}
-                          {menu.children ? (
-                            <i className="fas fa-chevron-down"></i>
-                          ) : null}
-                        </Link>
+                    switch (menu.noUrl) {
+                      case true:
+                        return (
+                          <li key={menu.id}>
+                            <Link to="/" onClick={e=>e.preventDefault()}>
+                              {menu.title}
+                              {menu.children ? (
+                                <i className="fas fa-chevron-down"></i>
+                              ) : null}
+                            </Link>
 
-                        {menu.children && (
-                          <div className="uk-navbar-dropdown">
-                            <ul className="uk-nav uk-navbar-dropdown-nav">
-                              {menu.children.map((children) => {
-                                return (
-                                  <li key={children.id}>
-                                    <Link to={children.url}>
-                                      {children.title}
-                                    </Link>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          </div>
-                        )}
-                      </li>
-                    );
+                            {menu.children && (
+                              <div className="uk-navbar-dropdown">
+                                <ul className="uk-nav uk-navbar-dropdown-nav">
+                                  {menu.children.map((children) => {
+                                    return (
+                                      <li key={children.id}>
+                                        <Link to={children.url}>
+                                          {children.title}
+                                        </Link>
+                                      </li>
+                                    );
+                                  })}
+                                </ul>
+                              </div>
+                            )}
+                          </li>
+                        );
+
+                      default:
+                        return (
+                          <li key={menu.id}>
+                            <Link to={menu.url}>
+                              {menu.title}
+                              {menu.children ? (
+                                <i className="fas fa-chevron-down"></i>
+                              ) : null}
+                            </Link>
+
+                            {menu.children && (
+                              <div className="uk-navbar-dropdown">
+                                <ul className="uk-nav uk-navbar-dropdown-nav">
+                                  {menu.children.map((children) => {
+                                    return (
+                                      <li key={children.id}>
+                                        <Link to={children.url}>
+                                          {children.title}
+                                        </Link>
+                                      </li>
+                                    );
+                                  })}
+                                </ul>
+                              </div>
+                            )}
+                          </li>
+                        );
+                        
+                    }
+
+                    // return (
+                    //   <li key={menu.id}>
+                    //     <Link to={menu.url}>
+                    //       {menu.title}
+                    //       {menu.children ? (
+                    //         <i className="fas fa-chevron-down"></i>
+                    //       ) : null}
+                    //     </Link>
+
+                    //     {menu.children && (
+                    //       <div className="uk-navbar-dropdown">
+                    //         <ul className="uk-nav uk-navbar-dropdown-nav">
+                    //           {menu.children.map((children) => {
+                    //             return (
+                    //               <li key={children.id}>
+                    //                 <Link to={children.url}>
+                    //                   {children.title}
+                    //                 </Link>
+                    //               </li>
+                    //             );
+                    //           })}
+                    //         </ul>
+                    //       </div>
+                    //     )}
+                    //   </li>
+                    // );
                   })}
-                  <li>
+                  {/* <li>
                     <a href="/#">
                       Resources<i className="fas fa-chevron-down"></i>
                     </a>
@@ -140,7 +228,7 @@ function Header() {
                         </div>
                       </div>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
                 {authOption === "yes" ? parser(authBtn) : ""}
                 {/* <div className="uk-navbar-item uk-visible@m in-optional-nav">
@@ -184,7 +272,9 @@ function Header() {
                   </div>
                 </div>
               </div>
-              
+              {/* <!-- module breadcrumb begin --> */}
+              {/* {parser(breadCrumb)} */}
+              {/* <!-- module breadcrumb end --> */}
             </div>
           </div>
         </div>

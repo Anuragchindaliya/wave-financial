@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1",
+    "profileImg": "assets/img/in-team-4.png",
+    "name": "Mark Harris",
+    "time": "April 25, 2020",
+    "comment": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequ vel illum qui dolorem eum fugiat quo voluptas nulla pariatur sunt in culpa qui officia deserunt mollit anim id est laborum adipisci velit.",
+    "replies": [
+      {
+        "id": "1",
+        "profileImg": "assets/img/in-team-6.png",
+        "name": "Dennis Olson",
+        "time": "April 27, 2020",
+        "comment": "Tuis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequ vel illum qui dolorem"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "profileImg": "assets/img/in-team-9.png",
+    "name": "Peter Morrison",
+    "time": "April 25, 2020",
+    "comment": "Molestiae consequ vel illum qui dolorem eum fugiat quo voluptas nulla pariatur sunt in culpa qui officia deserunt mollit anim id est laborum adipisci velit."
+  }
+]

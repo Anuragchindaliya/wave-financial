@@ -56,7 +56,7 @@ const App = withRouter((props) => {
             <Route path="/blog" component={Blog} />
             <Route path="/careers" component={Careers} />
             <Route path="/contact" component={Contact} />
-            <Route path="/blog-artical" component={Sblog} />
+            <Route path="/blog-article" component={Sblog} />
             <Route path="/customers" component={Customers} />
             <Route path="/help-center" component={Helpcenter} />
             <Route path="/home2" component={Homepage2} />

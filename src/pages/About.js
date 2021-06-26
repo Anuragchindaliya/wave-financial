@@ -38,45 +38,6 @@ const About = () => {
                   </div>
                 );
               })}
-              {/* <div className="uk-flex uk-flex-left">
-                <div className="uk-margin-right">
-                  <i className="fas fa-leaf fa-lg in-icon-wrap primary-color"></i>
-                </div>
-                <div>
-                  <h3>Philosophy</h3>
-                  <p>
-                    At vero eos etme accusamus iusto odio ent dignissimos
-                    deleniti atque corrupti quos ducimus moll quilla blanditiis
-                    expedita est distinctio.
-                  </p>
-                </div>
-              </div>
-              <div className="uk-flex uk-flex-left">
-                <div className="uk-margin-right">
-                  <i className="fas fa-hourglass-end fa-lg in-icon-wrap primary-color"></i>
-                </div>
-                <div>
-                  <h3>History</h3>
-                  <p>
-                    At vero eos etme accusamus iusto odio ent dignissimos
-                    deleniti atque corrupti quos ducimus moll quilla blanditiis
-                    expedita est distinctio.
-                  </p>
-                </div>
-              </div>
-              <div className="uk-flex uk-flex-left">
-                <div className="uk-margin-right">
-                  <i className="fas fa-flag fa-lg in-icon-wrap primary-color"></i>
-                </div>
-                <div>
-                  <h3>Culture</h3>
-                  <p>
-                    At vero eos etme accusamus iusto odio ent dignissimos
-                    deleniti atque corrupti quos ducimus moll quilla blanditiis
-                    expedita est distinctio.
-                  </p>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
@@ -128,8 +89,11 @@ const About = () => {
                             <h4 className="uk-margin-small-top">{pros.name}</h4>
                             <p>{pros.desc}</p>
                             <div>
-                              {pros.social.map((link, index,arr) => {
-                                  const rightMargin = index===arr.length-1?"":"uk-margin-small-right";
+                              {pros.social.map((link, index, arr) => {
+                                const rightMargin =
+                                  index === arr.length - 1
+                                    ? ""
+                                    : "uk-margin-small-right";
                                 return (
                                   <a
                                     key={index}
@@ -142,144 +106,11 @@ const About = () => {
                                   </a>
                                 );
                               })}
-                              {/* <a className="uk-link-muted" href="/#">
-                                <i className="fab fa-facebook-f uk-margin-small-right"></i>
-                              </a>
-                              <a className="uk-link-muted" href="/#">
-                                <i className="fab fa-twitter uk-margin-small-right"></i>
-                              </a>
-                              <a className="uk-link-muted" href="/#">
-                                <i className="fab fa-linkedin-in"></i>
-                              </a> */}
                             </div>
                           </div>
                         </div>
                       );
                     })}
-                    {/* <div className="uk-flex uk-flex-left">
-                      <div className="uk-margin-right">
-                        <img
-                          className="uk-align-center "
-                          src="assets/img/in-team-1.png"
-                          alt="team"
-                          width="300"
-                        />
-                      </div>
-                      <div>
-                        <p className="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">
-                          Chief Executive Officer
-                        </p>
-                        <h4 className="uk-margin-small-top">Cynthia Dixon</h4>
-                        <p>
-                          Nostrum exercitationem ullam corporis suscipit labor
-                          samnisi ute aliquid fugiat.
-                        </p>
-                        <div>
-                          <a className="uk-link-muted" href="/#">
-                            <i className="fab fa-facebook-f uk-margin-small-right"></i>
-                          </a>
-                          <a className="uk-link-muted" href="/#">
-                            <i className="fab fa-twitter uk-margin-small-right"></i>
-                          </a>
-                          <a className="uk-link-muted" href="/#">
-                            <i className="fab fa-linkedin-in"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="uk-flex uk-flex-left">
-                      <div className="uk-margin-right">
-                        <img
-                          className="uk-align-center "
-                          src="assets/img/in-team-2.png"
-                          alt="team"
-                          width="300"
-                        />
-                      </div>
-                      <div>
-                        <p className="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">
-                          Executive Assistant
-                        </p>
-                        <h4 className="uk-margin-small-top">Arthur Parker</h4>
-                        <p>
-                          Nostrum exercitationem ullam corporis suscipit labor
-                          samnisi ute aliquid fugiat.
-                        </p>
-                        <div>
-                          <a className="uk-link-muted" href="/#">
-                            <i className="fab fa-facebook-f uk-margin-small-right"></i>
-                          </a>
-                          <a className="uk-link-muted" href="/#">
-                            <i className="fab fa-twitter uk-margin-small-right"></i>
-                          </a>
-                          <a className="uk-link-muted" href="/#">
-                            <i className="fab fa-linkedin-in"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="uk-flex uk-flex-left">
-                      <div className="uk-margin-right">
-                        <img
-                          className="uk-align-center "
-                          src="assets/img/in-team-3.png"
-                          alt="team"
-                          width="300"
-                        />
-                      </div>
-                      <div>
-                        <p className="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">
-                          Marketing Specialist
-                        </p>
-                        <h4 className="uk-margin-small-top">Evelyn Mason</h4>
-                        <p>
-                          Nostrum exercitationem ullam corporis suscipit labor
-                          samnisi ute aliquid fugiat.
-                        </p>
-                        <div>
-                          <a className="uk-link-muted" href="/#">
-                            <i className="fab fa-facebook-f uk-margin-small-right"></i>
-                          </a>
-                          <a className="uk-link-muted" href="/#">
-                            <i className="fab fa-twitter uk-margin-small-right"></i>
-                          </a>
-                          <a className="uk-link-muted" href="/#">
-                            <i className="fab fa-linkedin-in"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="uk-flex uk-flex-left">
-                      <div className="uk-margin-right">
-                        <img
-                          className="uk-align-center "
-                          src="assets/img/in-team-4.png"
-                          alt="team"
-                          width="300"
-                        />
-                      </div>
-                      <div>
-                        <p className="uk-text-small uk-text-muted uk-text-uppercase uk-margin-remove-bottom">
-                          Human Resources
-                        </p>
-                        <h4 className="uk-margin-small-top">Bryan Greene</h4>
-                        <p>
-                          Nostrum exercitationem ullam corporis suscipit labor
-                          samnisi ute aliquid fugiat.
-                        </p>
-                        <div>
-                          <a className="uk-link-muted" href="/#">
-                            <i className="fab fa-facebook-f uk-margin-small-right"></i>
-                          </a>
-                          <a className="uk-link-muted" href="/#">
-                            <i className="fab fa-twitter uk-margin-small-right"></i>
-                          </a>
-                          <a className="uk-link-muted" href="/#">
-                            <i className="fab fa-linkedin-in"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </div>

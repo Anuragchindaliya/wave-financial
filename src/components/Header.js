@@ -1,20 +1,14 @@
 import { Link, useLocation } from "react-router-dom";
-// import logo1 from "../assets/img/in-logo-1.svg";
 import menuOption from "database/menus.json";
 import AuthBtns from "components/AuthBtns";
 import MobileNav from "components/MobileNav";
-
-import { useState ,useEffect} from "react";
-
-
-const Header=()=> {
-  // console.log(menus);
+import { useState, useEffect,useRef } from "react";
+const Header = () => {
   const { menus, authOption } = menuOption;
 
-  // console.log(useLocation());
   const { pathname } = useLocation();
   var whiteBgClass = `uk-section uk-padding-remove-vertical in-header-home`;
-  // var logo = "assets/img/in-logo-1.svg";
+
   var bgImg = ``;
   var txtColor = "uk-logo";
 
@@ -26,12 +20,7 @@ const Header=()=> {
   ) {
     whiteBgClass = `uk-section uk-padding-remove-vertical in-header-inner uk-background-cover uk-background-top-center`;
     bgImg = `backgroundImage: 'url("assets/img/in-wave-background-1.png")`;
-    // breadCrumb = `<div class="uk-width-1-1 in-breadcrumb">
-    //         <ul class="uk-breadcrumb uk-text-uppercase">
-    //             <li><a href="index-2.html">Home</a></li>
-    //         </ul>
-    //   </div>`;
-    // logo="assets/img/in-logo-2.svg"
+
     txtColor = "uk-logo black-text";
   }
   // const [menus,setMenus]=useState([]);
@@ -45,36 +34,26 @@ const Header=()=> {
   // },[]);
   // console.log(menus);
 
-  
-    var [hamburgStatus, setHamburg] = useState(false);
-    const handleHamburgClick = () => {
-      setHamburg(!hamburgStatus);
-      
+  var [hamburgStatus, setHamburg] = useState(false);
+  const handleHamburgClick = () => {
+    setHamburg(!hamburgStatus);
+    console.log(hamburgStatus);
+  };
+  var menuStatus = useRef();
+  useEffect(() => {
+    setHamburg(hamburgStatus = false);
+    menuStatus.current=hamburgStatus;
+    // console.log(menuStatus);
+  }, [pathname]);
 
-      console.log(hamburgStatus);
-    };
-    
-
-    useEffect(()=>{
-      setHamburg(hamburgStatus=false)
-      
-    },[pathname])
-    // const displayHeader = useRef(false);
-    // // {current:false}
-    // const handleHamburgClick = () => {
-    //   console.log("clicked");
-    //   displayHeader.current = !displayHeader.current;
-    // }
-  
   return (
     <div>
-      {/* <!-- preloader begin --> */}
       <div className="in-loader">
         <div></div>
         <div></div>
         <div></div>
       </div>
-      {/* <!-- preloader end --> */}
+
       <header>
         {/* <!-- header content begin --> */}
         <div className={whiteBgClass} style={{ bgImg }}>
@@ -89,13 +68,6 @@ const Header=()=> {
                   {/* <!-- module logo begin --> */}
                   <Link className={txtColor} to="/">
                     Web2Rise
-                    {/* <img
-                      className="uk-margin-small-right in-offset-top-10"
-                      src={logo}
-                      alt="wave"
-                      width="134"
-                      height="23"
-                    /> */}
                   </Link>
                   {/* <!-- module logo begin --> */}
                 </div>
@@ -160,81 +132,7 @@ const Header=()=> {
                           </li>
                         );
                     }
-
-                    // return (
-                    //   <li key={menu.id}>
-                    //     <Link to={menu.url}>
-                    //       {menu.title}
-                    //       {menu.children ? (
-                    //         <i className="fas fa-chevron-down"></i>
-                    //       ) : null}
-                    //     </Link>
-
-                    //     {menu.children && (
-                    //       <div className="uk-navbar-dropdown">
-                    //         <ul className="uk-nav uk-navbar-dropdown-nav">
-                    //           {menu.children.map((children) => {
-                    //             return (
-                    //               <li key={children.id}>
-                    //                 <Link to={children.url}>
-                    //                   {children.title}
-                    //                 </Link>
-                    //               </li>
-                    //             );
-                    //           })}
-                    //         </ul>
-                    //       </div>
-                    //     )}
-                    //   </li>
-                    // );
                   })}
-                  {/* <li>
-                    <a href="/#">
-                      Resources<i className="fas fa-chevron-down"></i>
-                    </a>
-                    <div className="uk-navbar-dropdown uk-navbar-dropdown-width-2">
-                      <div
-                        className="uk-navbar-dropdown-grid uk-child-width-1-2"
-                        data-uk-grid
-                      >
-                        <div>
-                          <ul className="uk-nav uk-navbar-dropdown-nav">
-                            <li>
-                              <a href="https://getuikit.com/docs/">
-                                Documentation
-                                <i className="fas fa-external-link-square-alt fa-sm"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <Link to="help-center">Help Center</Link>
-                            </li>
-                            <li>
-                              <Link to="customers">Customers</Link>
-                            </li>
-                            <li>
-                              <Link to="roadmap">Roadmap</Link>
-                            </li>
-                            <li>
-                              <Link to="legal-docs">
-                                Legal Docs<i className="fas fa-gavel fa-sm"></i>
-                              </Link>
-                            </li>
-                          </ul>
-                        </div>
-                        <div>
-                          <ul className="uk-nav uk-navbar-dropdown-nav">
-                            <li>
-                              <a className="uk-disabled" href="/#">
-                                Adipiscing elit sed do eiusmod incididunt ut
-                                labore dolore magna lorem ipsum sit dolor amet
-                                consectetur
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li> */}
                 </ul>
 
                 {/* hamburg */}
@@ -248,11 +146,12 @@ const Header=()=> {
                     <i className="fas fa-bars"></i>
                   </button>
                 </div>
-                {hamburgStatus ? <MobileNav closeModal={handleHamburgClick} />:null}
+                {hamburgStatus ? (
+                  <MobileNav closeModal={handleHamburgClick} />
+                ) : null}
                 {/* hamburger */}
 
                 {authOption === "yes" ? <AuthBtns /> : null}
-                
               </div>
             </div>
           </nav>
@@ -290,17 +189,8 @@ const Header=()=> {
           </div>
         </div>
         {/* <!-- header content end --> */}
-
-        {/* <div
-          className="hamburg"
-          style={{ color: "#fff" }}
-          
-        >
-          navbar
-          {hamburgStatus ?? <MobileNav />}
-        </div> */}
       </header>
     </div>
   );
-}
+};
 export default Header;

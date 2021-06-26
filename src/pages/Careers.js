@@ -36,45 +36,6 @@ const Careers = () => {
                     </div>
                   );
                 })}
-                {/* <div>
-                  <h4>Our oppurtinity</h4>
-                  <p>
-                    Excepteur sint occaecat cupidatat non proident sunt in culpa
-                    qui anim officia.
-                  </p>
-                  <a
-                    className="uk-button uk-button-text uk-text-primary"
-                    href="/#"
-                  >
-                    Watch the video
-                  </a>
-                </div>
-                <div>
-                  <h4>Our team</h4>
-                  <p>
-                    Architecto beatae vitae dicta sunt explicabo ipsam memo
-                    voluptatem quia voluptas.
-                  </p>
-                  <a
-                    className="uk-button uk-button-text uk-text-primary"
-                    href="/#"
-                  >
-                    Meet the team
-                  </a>
-                </div>
-                <div>
-                  <h4>Our culture</h4>
-                  <p>
-                    Corporis suscipit laboriosa nisi ut aliquid ex ea commodi
-                    consequatur pariatur.
-                  </p>
-                  <a
-                    className="uk-button uk-button-text uk-text-primary"
-                    href="/#"
-                  >
-                    See our values
-                  </a>
-                </div> */}
               </div>
             </div>
           </div>
@@ -111,61 +72,6 @@ const Careers = () => {
                       </tr>
                     );
                   })}
-                  {/* <tr>
-                    <td>
-                      <h4>Solutions engineer (entry level)</h4>
-                    </td>
-                    <td>
-                      <i className="fas fa-map-marker-alt uk-margin-small-right" />{" "}
-                      Stockholm, Sweden
-                    </td>
-                    <td className="uk-text-left uk-text-right@m">
-                      <a
-                        className="uk-button uk-button-primary uk-border-rounded"
-                        href="/#"
-                      >
-                        Apply for this job{" "}
-                        <i className="fas fa-file-alt uk-margin-small-left" />
-                      </a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <h4>Sales Development Representative</h4>
-                    </td>
-                    <td>
-                      <i className="fas fa-map-marker-alt uk-margin-small-right" />{" "}
-                      London, United Kingdom
-                    </td>
-                    <td className="uk-text-left uk-text-right@m">
-                      <a
-                        className="uk-button uk-button-primary uk-border-rounded"
-                        href="/#"
-                      >
-                        Apply for this job{" "}
-                        <i className="fas fa-file-alt uk-margin-small-left" />
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <h4>Software Engineer - Backend</h4>
-                    </td>
-                    <td>
-                      <i className="fas fa-map-marker-alt uk-margin-small-right" />{" "}
-                      Stockholm, Sweden
-                    </td>
-                    <td className="uk-text-left uk-text-right@m">
-                      <a
-                        className="uk-button uk-button-primary uk-border-rounded"
-                        href="/#"
-                      >
-                        Apply for this job{" "}
-                        <i className="fas fa-file-alt uk-margin-small-left" />
-                      </a>
-                    </td>
-                  </tr> */}
                 </tbody>
               </table>
             </div>
@@ -195,72 +101,6 @@ const Careers = () => {
             </div>
               )
             })}
-            {/* <div className="uk-text-center">
-              <div className="uk-inline-clip uk-transition-toggle" tabIndex={0}>
-                <img
-                  className="uk-transition-scale-up uk-transition-opaque"
-                  src="assets/img/in-gallery-image-1.jpg"
-                  alt="gallery"
-                  data-width
-                  data-height
-                />
-              </div>
-            </div>
-            <div className="uk-text-center">
-              <div className="uk-inline-clip uk-transition-toggle" tabIndex={0}>
-                <img
-                  className="uk-transition-scale-up uk-transition-opaque"
-                  src="assets/img/in-gallery-image-2.jpg"
-                  alt="gallery"
-                  data-width
-                  data-height
-                />
-              </div>
-            </div>
-            <div className="uk-text-center">
-              <div className="uk-inline-clip uk-transition-toggle" tabIndex={0}>
-                <img
-                  className="uk-transition-scale-up uk-transition-opaque"
-                  src="assets/img/in-gallery-image-3.jpg"
-                  alt="gallery"
-                  data-width
-                  data-height
-                />
-              </div>
-            </div>
-            <div className="uk-text-center">
-              <div className="uk-inline-clip uk-transition-toggle" tabIndex={0}>
-                <img
-                  className="uk-transition-scale-up uk-transition-opaque"
-                  src="assets/img/in-gallery-image-4.jpg"
-                  alt="gallery"
-                  data-width
-                  data-height
-                />
-              </div>
-            </div>
-            <div className="uk-text-center">
-              <div className="uk-inline-clip uk-transition-toggle" tabIndex={0}>
-                <img
-                  className="uk-transition-scale-up uk-transition-opaque"
-                  src="assets/img/in-gallery-image-5.jpg"
-                  alt="gallery"
-                  data-width
-                  data-height
-                />
-              </div>
-            </div>
-            <div className="uk-text-center">
-              <div className="uk-inline-clip uk-transition-toggle" tabIndex={0}>
-                <img
-                  className="uk-transition-scale-up uk-transition-opaque"
-                  src="assets/img/in-gallery-image-6.jpg"
-                  alt="gallery"
-                  data-width
-                  data-height
-                />
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

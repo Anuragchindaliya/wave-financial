@@ -93,72 +93,6 @@ const Education = () => {
                       </tr>
                     );
                   })}
-                  {/* <tr>
-                    <td className="uk-width-1-3@m">
-                      <div className="uk-grid uk-grid-small uk-flex uk-flex-middle">
-                        <div className="uk-width-auto">
-                          <i className="fas fa-users fa-lg in-icon-wrap" />
-                        </div>
-                        <div className="uk-width-expand">
-                          <h3>Beginner Course</h3>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      Learn the basic concepts of forex trading, what this
-                      market is all about, and why you should be a part of it.
-                    </td>
-                    <td className="uk-width-1-5@m uk-text-right@m">
-                      <a href="/#" className="uk-button uk-button-text">
-                        Enter Course
-                        <i className="fas fa-chevron-right fa-xs uk-margin-small-left" />
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="uk-width-1-3@m">
-                      <div className="uk-grid uk-grid-small uk-flex uk-flex-middle">
-                        <div className="uk-width-auto">
-                          <i className="fas fa-tools fa-lg in-icon-wrap" />
-                        </div>
-                        <div className="uk-width-expand">
-                          <h3>Trading Tools</h3>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      Familiarize yourself with advanced strategies and Btrade's
-                      trading toolset. Take your trading to the next level.
-                    </td>
-                    <td className="uk-width-1-5@m uk-text-right@m">
-                      <a href="/#" className="uk-button uk-button-text">
-                        Enter Course
-                        <i className="fas fa-chevron-right fa-xs uk-margin-small-left" />
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="uk-width-1-3@m">
-                      <div className="uk-grid uk-grid-small uk-flex uk-flex-middle">
-                        <div className="uk-width-auto">
-                          <i className="fas fa-chart-area fa-lg in-icon-wrap" />
-                        </div>
-                        <div className="uk-width-expand">
-                          <h3>Stocks and CFDs</h3>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      Discover the world of CFD trading: The ins &amp; outs of
-                      the CFD market, relevant information and market dynamics.
-                    </td>
-                    <td className="uk-width-1-5@m uk-text-right@m">
-                      <a href="/#" className="uk-button uk-button-text">
-                        Enter Course
-                        <i className="fas fa-chevron-right fa-xs uk-margin-small-left" />
-                      </a>
-                    </td>
-                  </tr> */}
                 </tbody>
               </table>
               <div className="uk-flex uk-flex-center uk-margin-medium-top uk-margin-bottom">
@@ -179,55 +113,6 @@ const Education = () => {
                         </div>
                       );
                     })}
-                    {/* <div>
-                      <a
-                        className="uk-button uk-button-default uk-border-rounded uk-width-expand"
-                        href="/#"
-                      >
-                        Fast Academy
-                      </a>
-                    </div>
-
-                    <div>
-                      <a
-                        className="uk-button uk-button-default uk-border-rounded uk-width-expand"
-                        href="/#"
-                      >
-                        Video Tutorials
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        className="uk-button uk-button-default uk-border-rounded uk-width-expand"
-                        href="/#"
-                      >
-                        Course
-                      </a>
-                    </div>
-                    <div>
-                      <a
-                        className="uk-button uk-button-default uk-border-rounded uk-width-expand"
-                        href="/#"
-                      >
-                        E-Books
-                      </a>
-                    </div>
-                    <div className="uk-visible@m">
-                      <a
-                        className="uk-button uk-button-default uk-border-rounded uk-width-expand"
-                        href="/#"
-                      >
-                        Glossary
-                      </a>
-                    </div>
-                    <div className="uk-visible@m">
-                      <a
-                        className="uk-button uk-button-default uk-border-rounded uk-width-expand"
-                        href="/#"
-                      >
-                        Trading Info
-                      </a>
-                    </div> */}
                   </div>
                 </div>
               </div>

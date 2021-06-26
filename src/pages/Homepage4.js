@@ -213,53 +213,6 @@ const Homepage4 = () => {
                         </div>
                       );
                     })}
-                    {/* <div className="uk-tile uk-tile-default">
-                      <img
-                        className="uk-margin-remove"
-                        src="assets/img/in-wave-media-1.svg"
-                        alt="client-logo"
-                        width={147}
-                        height={42}
-                      />
-                    </div>
-
-                    <div className="uk-tile uk-tile-default">
-                      <img
-                        className="uk-margin-remove"
-                        src="assets/img/in-wave-media-2.svg"
-                        alt="client-logo"
-                        width={147}
-                        height={42}
-                      />
-                    </div>
-
-                    <div className="uk-tile uk-tile-default">
-                      <img
-                        className="uk-margin-remove"
-                        src="assets/img/in-wave-media-3.svg"
-                        alt="client-logo"
-                        width={147}
-                        height={42}
-                      />
-                    </div>
-                    <div className="uk-tile uk-tile-default">
-                      <img
-                        className="uk-margin-remove"
-                        src="assets/img/in-wave-media-4.svg"
-                        alt="client-logo"
-                        width={147}
-                        height={42}
-                      />
-                    </div>
-                    <div className="uk-tile uk-tile-default uk-visible@m">
-                      <img
-                        className="uk-margin-remove"
-                        src="assets/img/in-wave-media-5.svg"
-                        alt="client-logo"
-                        width={147}
-                        height={42}
-                      />
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -295,7 +248,7 @@ const Homepage4 = () => {
             </div>
             <div className="uk-width-expand@m">
               <div className="uk-grid uk-grid-collapse uk-child-width-1-3@m uk-child-width-1-2@s uk-text-center">
-                {services.map((service,index) => {
+                {services.map((service, index) => {
                   return (
                     <div key={index} className="uk-tile uk-tile-default">
                       <img
@@ -308,61 +261,6 @@ const Homepage4 = () => {
                     </div>
                   );
                 })}
-                {/* <div className="uk-tile uk-tile-default">
-                  <img
-                    className="uk-margin-remove-bottom"
-                    src="assets/img/in-wave-icon-14.svg"
-                    alt="wave-icon"
-                    width={64}
-                  />
-                  <h5 className="uk-margin-small-top">Maximum value</h5>
-                </div>
-                <div className="uk-tile uk-tile-default">
-                  <img
-                    className="uk-margin-remove-bottom"
-                    src="assets/img/in-wave-icon-15.svg"
-                    alt="wave-icon"
-                    width={64}
-                  />
-                  <h5 className="uk-margin-small-top">Fast executions</h5>
-                </div>
-                <div className="uk-tile uk-tile-default">
-                  <img
-                    className="uk-margin-remove-bottom"
-                    src="assets/img/in-wave-icon-16.svg"
-                    alt="wave-icon"
-                    width={64}
-                  />
-                  <h5 className="uk-margin-small-top">Trading tools</h5>
-                </div>
-                <div className="uk-tile uk-tile-default">
-                  <img
-                    className="uk-margin-remove-bottom"
-                    src="assets/img/in-wave-icon-17.svg"
-                    alt="wave-icon"
-                    width={64}
-                  />
-                  <h5 className="uk-margin-small-top">Guide &amp; support</h5>
-                </div>
-                <div className="uk-tile uk-tile-default uk-visible@m">
-                  <img
-                    className="uk-margin-remove-bottom"
-                    src="assets/img/in-wave-icon-9.svg"
-                    alt="wave-icon"
-                    width={64}
-                  />
-                  <h5 className="uk-margin-small-top">Financial secure</h5>
-                </div>
-                <div className="uk-tile uk-tile-default uk-visible@m">
-                  <img
-                    className="uk-margin-remove-bottom"
-                    src="assets/img/in-wave-icon-8.svg"
-                    alt="wave-icon"
-                    width={64}
-                  />
-                  <h5 className="uk-margin-small-top">Strong regulatory</h5>
-                </div> */}
-
               </div>
             </div>
           </div>

@@ -27,7 +27,7 @@
         "authorName":"Raymond Patel",
         "publishedTime":"April 26, 2020",
         "niche":"Startups",
-        "url":"blog-article.html"
+        "url":"blog-article"
     },
     {
         "title":"Grab names new chief financial officer",
@@ -37,7 +37,7 @@
         "authorName":"Evelyn Mason",
         "publishedTime":"April 13, 2020",
         "niche":"Startups",
-        "url":"blog-article.html"
+        "url":"blog-article"
     },
     {
         "title":"Monaco launches now tourism campaign",
@@ -47,6 +47,6 @@
         "authorName":"Timothy Watkins",
         "publishedTime":"April 7, 2020",
         "niche":"Travels",
-        "url":"blog-article.html"
+        "url":"blog-article"
     }
 ]

@@ -48,10 +48,10 @@ const Header=()=> {
   
     var [hamburgStatus, setHamburg] = useState(false);
     const handleHamburgClick = () => {
-      setHamburg(!hamburgStatus);
       
-
+      setHamburg(!hamburgStatus);
       console.log(hamburgStatus);
+
     };
     
 

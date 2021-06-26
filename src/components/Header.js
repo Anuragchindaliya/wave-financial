@@ -1,10 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 // import logo1 from "../assets/img/in-logo-1.svg";
 import menuOption from "database/menus.json";
-import parser from "html-react-parser";
-// import {useState,useEffect } from 'react';
+import AuthBtns from "components/AuthBtns";
+import MobileNav from "components/MobileNav";
 
-function Header() {
+import { useState ,useEffect} from "react";
+
+
+const Header=()=> {
   // console.log(menus);
   const { menus, authOption } = menuOption;
 
@@ -31,20 +34,6 @@ function Header() {
     // logo="assets/img/in-logo-2.svg"
     txtColor = "uk-logo black-text";
   }
-
-  const authBtn = `<div class="uk-navbar-item uk-visible@m in-optional-nav">
-                  <a href="signin.html" class="uk-button uk-button-text">
-                    <i class="fas fa-user-circle uk-margin-small-right"></i>
-                    Log in
-                  </a>
-                  <a
-                    href="/#"
-                    class="uk-button uk-button-primary uk-button-small uk-border-pill"
-                  >
-                    Sign up
-                  </a>
-                </div> `;
-
   // const [menus,setMenus]=useState([]);
   // useEffect(()=>{
   //   fetch("https://q2w.in/wave.php?type=menus")
@@ -56,9 +45,27 @@ function Header() {
   // },[]);
   // console.log(menus);
 
-  // for white background
-  // style={{backgroundImage: 'url("assets/img/in-wave-background-1.png")'}}
+  
+    var [hamburgStatus, setHamburg] = useState(false);
+    const handleHamburgClick = () => {
+      setHamburg(!hamburgStatus);
+      
 
+      console.log(hamburgStatus);
+    };
+    
+
+    useEffect(()=>{
+      setHamburg(hamburgStatus=false)
+      
+    },[pathname])
+    // const displayHeader = useRef(false);
+    // // {current:false}
+    // const handleHamburgClick = () => {
+    //   console.log("clicked");
+    //   displayHeader.current = !displayHeader.current;
+    // }
+  
   return (
     <div>
       {/* <!-- preloader begin --> */}
@@ -100,7 +107,7 @@ function Header() {
                       case true:
                         return (
                           <li key={menu.id}>
-                            <Link to="/" onClick={e=>e.preventDefault()}>
+                            <Link to="/" onClick={(e) => e.preventDefault()}>
                               {menu.title}
                               {menu.children ? (
                                 <i className="fas fa-chevron-down"></i>
@@ -152,7 +159,6 @@ function Header() {
                             )}
                           </li>
                         );
-                        
                     }
 
                     // return (
@@ -230,19 +236,23 @@ function Header() {
                     </div>
                   </li> */}
                 </ul>
-                {authOption === "yes" ? parser(authBtn) : ""}
-                {/* <div className="uk-navbar-item uk-visible@m in-optional-nav">
-                  <a href="signin.html" className="uk-button uk-button-text">
-                    <i className="fas fa-user-circle uk-margin-small-right"></i>
-                    Log in
-                  </a>
-                  <a
-                    href="/#"
-                    className="uk-button uk-button-primary uk-button-small uk-border-pill"
+
+                {/* hamburg */}
+                <div className="custom uk-navbar-item in-mobile-nav uk-hidden@m">
+                  <button
+                    className="uk-button"
+                    // href="#modal-full"
+                    // data-uk-toggle=""
+                    onClick={handleHamburgClick}
                   >
-                    Sign up
-                  </a>
-                </div> */}
+                    <i className="fas fa-bars"></i>
+                  </button>
+                </div>
+                {hamburgStatus ? <MobileNav closeModal={handleHamburgClick} />:null}
+                {/* hamburger */}
+
+                {authOption === "yes" ? <AuthBtns /> : null}
+                
               </div>
             </div>
           </nav>
@@ -272,6 +282,7 @@ function Header() {
                   </div>
                 </div>
               </div>
+
               {/* <!-- module breadcrumb begin --> */}
               {/* {parser(breadCrumb)} */}
               {/* <!-- module breadcrumb end --> */}
@@ -279,6 +290,15 @@ function Header() {
           </div>
         </div>
         {/* <!-- header content end --> */}
+
+        {/* <div
+          className="hamburg"
+          style={{ color: "#fff" }}
+          
+        >
+          navbar
+          {hamburgStatus ?? <MobileNav />}
+        </div> */}
       </header>
     </div>
   );

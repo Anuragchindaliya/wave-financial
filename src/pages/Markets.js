@@ -48,67 +48,6 @@ const Markets = () => {
                 </div>
               );
             })}
-
-            {/* <div>
-                      <div className="uk-card uk-card-default uk-card-body uk-border-rounded uk-light in-card-green">
-                          <i className="fas fa-seedling fa-lg in-icon-wrap uk-margin-bottom"></i>
-                          <h4 className="uk-margin-top">
-                              <a href="/#">Investing<i className="fas fa-chevron-right uk-float-right"></i></a>
-                          </h4>
-                          <hr/>
-                          <p>A wide selection of investment product to help build diversified portfolio</p>
-                      </div>
-                  </div>
-                  <div>
-                      <div className="uk-card uk-card-default uk-card-body uk-border-rounded uk-light in-card-blue">
-                          <i className="fas fa-chart-bar fa-lg in-icon-wrap uk-margin-bottom"></i>
-                          <h4 className="uk-margin-top">
-                              <a href="/#">Trading<i className="fas fa-chevron-right uk-float-right"></i></a>
-                          </h4>
-                          <hr/>
-                          <p>Powerful trading tools, resources, insight and support</p>
-                      </div>
-                  </div>
-                  <div>
-                      <div className="uk-card uk-card-default uk-card-body uk-border-rounded uk-light in-card-purple">
-                          <i className="fas fa-chart-pie fa-lg in-icon-wrap uk-margin-bottom"></i>
-                          <h4 className="uk-margin-top">
-                              <a href="/#">Wealth management<i className="fas fa-chevron-right uk-float-right"></i></a>
-                          </h4>
-                          <hr/>
-                          <p>Dedicated financial consultant to help reach your own specific goals</p>
-                      </div>
-                  </div>
-                  <div>
-                      <div className="uk-card uk-card-default uk-card-body uk-border-rounded uk-light in-card-navy">
-                          <i className="fas fa-chalkboard-teacher fa-lg in-icon-wrap uk-margin-bottom"></i>
-                          <h4 className="uk-margin-top">
-                              <a href="/#">Investment advisory<i className="fas fa-chevron-right uk-float-right"></i></a>
-                          </h4>
-                          <hr/>
-                          <p>A wide selection of investing strategies from seasoned portfolio managers</p>
-                      </div>
-                  </div>
-                  <div>
-                      <div className="uk-card uk-card-default uk-card-body uk-border-rounded uk-light in-card-grey">
-                          <i className="fas fa-funnel-dollar fa-lg in-icon-wrap uk-margin-bottom"></i>
-                          <h4 className="uk-margin-top">
-                              <a href="/#">Smart portfolio<i className="fas fa-chevron-right uk-float-right"></i></a>
-                          </h4>
-                          <hr/>
-                          <p>A revolutionary, fully-automated investmend advisory services</p>
-                      </div>
-                  </div>
-                  <div>
-                      <div className="uk-card uk-card-default uk-card-body uk-border-rounded uk-light in-card-orange">
-                          <i className="fas fa-handshake fa-lg in-icon-wrap uk-margin-bottom"></i>
-                          <h4 className="uk-margin-top">
-                              <a href="/#">Mutual fund advisor<i className="fas fa-chevron-right uk-float-right"></i></a>
-                          </h4>
-                          <hr/>
-                          <p>Specialized guidance from independent local advisor for hight-net-worth investors</p>
-                      </div>
-                  </div> */}
           </div>
         </div>
       </div>
@@ -141,10 +80,6 @@ const Markets = () => {
                           <li key={index}>{list}</li>
                           )
                         })}
-                        {/* <li>Direct Market Access (DMA)</li>
-                        <li>Leverage up to 1:500</li>
-                        <li>T+0 settlement</li>
-                        <li>Dividends paid in cash</li> */}
                       </ul>
                     </div>
                     <div className="in-margin-small-top@s in-margin-bottom@s">
@@ -155,10 +90,6 @@ const Markets = () => {
                           <li key={index}>{list}</li>
                           )
                         })}
-                        {/* <li>Free from UK Stamp Duty</li>
-                        <li>Short selling available</li>
-                        <li>Commissions from 0.08%</li>
-                        <li>Access to 1500 global shares</li> */}
                       </ul>
                     </div>
                   </div>

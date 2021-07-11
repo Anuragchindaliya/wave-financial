@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/wave-financial/static/css/main.b5ce94a4.chunk.css",
+    "main.js": "/wave-financial/static/js/main.ba08319c.chunk.js",
+    "main.js.map": "/wave-financial/static/js/main.ba08319c.chunk.js.map",
+    "runtime-main.js": "/wave-financial/static/js/runtime-main.d7fb6827.js",
+    "runtime-main.js.map": "/wave-financial/static/js/runtime-main.d7fb6827.js.map",
+    "static/js/2.84841422.chunk.js": "/wave-financial/static/js/2.84841422.chunk.js",
+    "static/js/2.84841422.chunk.js.map": "/wave-financial/static/js/2.84841422.chunk.js.map",
+    "static/js/3.c507bebc.chunk.js": "/wave-financial/static/js/3.c507bebc.chunk.js",
+    "static/js/3.c507bebc.chunk.js.map": "/wave-financial/static/js/3.c507bebc.chunk.js.map",
+    "index.html": "/wave-financial/index.html",
+    "static/css/main.b5ce94a4.chunk.css.map": "/wave-financial/static/css/main.b5ce94a4.chunk.css.map",
+    "static/js/2.84841422.chunk.js.LICENSE.txt": "/wave-financial/static/js/2.84841422.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/wave-financial/static/media/rubik-v9-latin-regular.99fee369.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7fb6827.js",
+    "static/js/2.84841422.chunk.js",
+    "static/css/main.b5ce94a4.chunk.css",
+    "static/js/main.ba08319c.chunk.js"
+  ]
+}

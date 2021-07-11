@@ -166,8 +166,55 @@ const Sblog = () => {
 
               <ul className="uk-comment-list">
                 {comments.map((comment) => {
+                  // function fetchReply(data){
+                  //   var html=`<article className="uk-comment uk-visible-toggle">
+                  //   <div className="uk-grid uk-grid-medium">
+                  //     <div className="uk-width-auto">
+                  //       <div className="uk-comment-header">
+                  //         <img
+                  //           className="uk-border-circle uk-background-muted uk-comment-avatar"
+                  //           src={comment.profileImg}
+                  //           width={70}
+                  //           height={70}
+                  //           alt="avatar"
+                  //         />
+                  //       </div>
+                  //     </div>
+                  //     <div className="uk-width-expand">
+                  //       <div className="uk-comment-body uk-position-relative">
+                  //         <div className="uk-position-top-right uk-hidden-hover">
+                  //           <a href="/#">
+                  //             <i className="fas fa-reply fa-xs uk-margin-small-right" />
+                  //             Reply
+                  //           </a>
+                  //         </div>
+                  //         <h4 className="uk-comment-title uk-margin-remove">
+                  //           <a className="uk-link-reset" href="/#">
+                  //             {comment.name}
+                  //           </a>
+                  //         </h4>
+                  //         <p className="uk-comment-meta uk-margin-remove-top">
+                  //           <a
+                  //             className="uk-link-reset uk-text-small"
+                  //             href="/#"
+                  //           >
+                  //             <i className="fas fa-clock fa-sm uk-margin-small-right" />
+                  //             {comment.time}
+                  //           </a>
+                  //         </p>
+                  //         <p>{comment.comment}</p>
+                  //       </div>
+                  //     </div>
+                  //   </div>
+                  // </article>`;
+                  //   while(data.hasOwnProperty('replies')){
+                  //     console.log("rely");
+                  //     return html+fetchReply(data.replies)
+                  //   }
+                  // }
                   return (
                     <li key={comment.id}>
+                      {/* {fetchReply(comment)} */}
                       <article className="uk-comment uk-visible-toggle">
                         <div className="uk-grid uk-grid-medium">
                           <div className="uk-width-auto">
@@ -208,8 +255,10 @@ const Sblog = () => {
                           </div>
                         </div>
                       </article>
-                      {comment.hasOwnProperty("replies")
-                        ? comment.replies.map((reply) => {
+                      {/* {fetchReply(comment.replies)} */}
+
+                      {comment.replies
+                        && comment.replies.map((reply) => {
                             return (
                               <ul key={reply.id}>
                                 <li>
@@ -261,11 +310,154 @@ const Sblog = () => {
                                 </li>
                               </ul>
                             );
-                          })
-                        : null}
+                          })}
                     </li>
                   );
                 })}
+
+                {/* <li>
+                  <article className="uk-comment uk-visible-toggle">
+                    <div className="uk-grid uk-grid-medium">
+                      <div className="uk-width-auto">
+                        <div className="uk-comment-header">
+                          <img
+                            className="uk-border-circle uk-background-muted uk-comment-avatar"
+                            src="assets/img/in-team-4.png"
+                            width={70}
+                            height={70}
+                            alt="avatar"
+                          />
+                        </div>
+                      </div>
+                      <div className="uk-width-expand">
+                        <div className="uk-comment-body uk-position-relative">
+                          <div className="uk-position-top-right uk-hidden-hover">
+                            <a href="/#">
+                              <i className="fas fa-reply fa-xs uk-margin-small-right" />
+                              Reply
+                            </a>
+                          </div>
+                          <h4 className="uk-comment-title uk-margin-remove">
+                            <a className="uk-link-reset" href="/#">
+                              Mark Harris
+                            </a>
+                          </h4>
+                          <p className="uk-comment-meta uk-margin-remove-top">
+                            <a
+                              className="uk-link-reset uk-text-small"
+                              href="/#"
+                            >
+                              <i className="fas fa-clock fa-sm uk-margin-small-right" />
+                              April 25, 2020
+                            </a>
+                          </p>
+                          <p>
+                            Quis autem vel eum iure reprehenderit qui in ea
+                            voluptate velit esse quam nihil molestiae consequ
+                            vel illum qui dolorem eum fugiat quo voluptas nulla
+                            pariatur sunt in culpa qui officia deserunt mollit
+                            anim id est laborum adipisci velit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <ul>
+                    <li>
+                      <article className="uk-comment uk-comment-primary uk-visible-toggle">
+                        <div className="uk-grid uk-grid-medium">
+                          <div className="uk-width-auto">
+                            <div className="uk-comment-header">
+                              <img
+                                className="uk-border-circle uk-background-muted uk-comment-avatar"
+                                src="assets/img/in-team-6.png"
+                                width={70}
+                                height={70}
+                                alt="avatar"
+                              />
+                            </div>
+                          </div>
+                          <div className="uk-width-expand">
+                            <div className="uk-comment-body uk-position-relative">
+                              <div className="uk-position-top-right uk-hidden-hover">
+                                <a href="/#">
+                                  <i className="fas fa-reply fa-xs uk-margin-small-right" />
+                                  Reply
+                                </a>
+                              </div>
+                              <h4 className="uk-comment-title uk-margin-remove">
+                                <a className="uk-link-reset" href="/#">
+                                  Dennis Olson
+                                </a>
+                              </h4>
+                              <p className="uk-comment-meta uk-margin-remove-top">
+                                <a
+                                  className="uk-link-reset uk-text-small"
+                                  href="/#"
+                                >
+                                  <i className="fas fa-clock fa-sm uk-margin-small-right" />
+                                  April 27, 2020
+                                </a>
+                              </p>
+                              <p>
+                                Tuis autem vel eum iure reprehenderit qui in ea
+                                voluptate velit esse quam nihil molestiae
+                                consequ vel illum qui dolorem.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <article className="uk-comment uk-visible-toggle">
+                    <div className="uk-grid uk-grid-medium">
+                      <div className="uk-width-auto">
+                        <div className="uk-comment-header">
+                          <img
+                            className="uk-border-circle uk-background-muted uk-comment-avatar"
+                            src="assets/img/in-team-9.png"
+                            width={70}
+                            height={70}
+                            alt="avatar"
+                          />
+                        </div>
+                      </div>
+                      <div className="uk-width-expand">
+                        <div className="uk-comment-body uk-position-relative">
+                          <div className="uk-position-top-right uk-hidden-hover">
+                            <a href="/#">
+                              <i className="fas fa-reply fa-xs uk-margin-small-right" />
+                              Reply
+                            </a>
+                          </div>
+                          <h4 className="uk-comment-title uk-margin-remove">
+                            <a className="uk-link-reset" href="/#">
+                              Peter Morrison
+                            </a>
+                          </h4>
+                          <p className="uk-comment-meta uk-margin-remove-top">
+                            <a
+                              className="uk-link-reset uk-text-small"
+                              href="/#"
+                            >
+                              <i className="fas fa-clock fa-sm uk-margin-small-right" />
+                              April 25, 2020
+                            </a>
+                          </p>
+                          <p>
+                            Molestiae consequ vel illum qui dolorem eum fugiat
+                            quo voluptas nulla pariatur sunt in culpa qui
+                            officia deserunt mollit anim id est laborum adipisci
+                            velit.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li> */}
               </ul>
             </div>
           </div>

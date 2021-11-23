@@ -1,6 +1,6 @@
 {
   "name": "wave",
-  "homepag": "https://anuragchindaliya.github.io/wave-financial",
+  "homepage": "https://anuragchindaliya.github.io/wave-financial",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

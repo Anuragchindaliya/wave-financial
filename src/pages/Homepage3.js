@@ -154,169 +154,6 @@ const Homepage3 = () => {
                       </li>
                     );
                   })}
-
-                  {/* <li>
-                    <div className="uk-grid uk-grid-small">
-                      <div className="uk-width-1-1 uk-text-center">
-                        <h5>XAU/USD</h5>
-                      </div>
-                      <div className="uk-width-1-2">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Bid
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-success uk-border-pill">
-                          1730.69
-                        </span>
-                      </div>
-                      <div className="uk-width-1-2 uk-text-right">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Ask
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-danger uk-border-pill">
-                          1731.44
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="uk-grid uk-grid-small">
-                      <div className="uk-width-1-1 uk-text-center">
-                        <h5>GBP/USD</h5>
-                      </div>
-                      <div className="uk-width-1-2">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Bid
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-danger uk-border-pill">
-                          1.2382
-                        </span>
-                      </div>
-                      <div className="uk-width-1-2 uk-text-right">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Ask
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-danger uk-border-pill">
-                          1.2383
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="uk-grid uk-grid-small">
-                      <div className="uk-width-1-1 uk-text-center">
-                        <h5>EUR/USD</h5>
-                      </div>
-                      <div className="uk-width-1-2">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Bid
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-danger uk-border-pill">
-                          1.1240
-                        </span>
-                      </div>
-                      <div className="uk-width-1-2 uk-text-right">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Ask
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-success uk-border-pill">
-                          1.1245
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="uk-grid uk-grid-small">
-                      <div className="uk-width-1-1 uk-text-center">
-                        <h5>USD/JPY</h5>
-                      </div>
-                      <div className="uk-width-1-2">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Bid
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-success uk-border-pill">
-                          106.915
-                        </span>
-                      </div>
-                      <div className="uk-width-1-2 uk-text-right">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Ask
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-success uk-border-pill">
-                          106.924
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="uk-grid uk-grid-small">
-                      <div className="uk-width-1-1 uk-text-center">
-                        <h5>USD/CAD</h5>
-                      </div>
-                      <div className="uk-width-1-2">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Bid
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-danger uk-border-pill">
-                          1.3591
-                        </span>
-                      </div>
-                      <div className="uk-width-1-2 uk-text-right">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Ask
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-success uk-border-pill">
-                          1.3593
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="uk-grid uk-grid-small">
-                      <div className="uk-width-1-1 uk-text-center">
-                        <h5>USD/CHF</h5>
-                      </div>
-                      <div className="uk-width-1-2">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Bid
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-danger uk-border-pill">
-                          0.9506
-                        </span>
-                      </div>
-                      <div className="uk-width-1-2 uk-text-right">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Ask
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-success uk-border-pill">
-                          1.2383
-                        </span>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="uk-grid uk-grid-small">
-                      <div className="uk-width-1-1 uk-text-center">
-                        <h5>AUD/USD</h5>
-                      </div>
-                      <div className="uk-width-1-2">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Bid
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-success uk-border-pill">
-                          0.6868
-                        </span>
-                      </div>
-                      <div className="uk-width-1-2 uk-text-right">
-                        <p className="uk-text-small uk-text-uppercase uk-margin-remove">
-                          Ask
-                        </p>
-                        <span className="uk-label uk-text-small uk-label-danger uk-border-pill">
-                          0.6869
-                        </span>
-                      </div>
-                    </div>
-                  </li> */}
                 </ul>
               </div>
             </div>
@@ -359,70 +196,6 @@ const Homepage3 = () => {
                 </div>
               );
             })}
-
-            {/* <div>
-              <div className="in-wave-12-counter">
-                <h1 className="uk-heading-medium uk-margin-remove">
-                  <span className="count" data-counter-end={20}>
-                    0
-                  </span>
-                  <span className="in-wave-12-small">years</span>
-                </h1>
-                <h4 className="uk-margin-top uk-margin-remove-bottom">
-                  Experience
-                </h4>
-                <p className="uk-text-muted uk-margin-remove-top">Since 2000</p>
-              </div>
-            </div>
-
-            <div>
-              <div className="in-wave-12-counter">
-                <h1 className="uk-heading-medium uk-margin-remove">
-                  <span className="count" data-counter-end={15}>
-                    0
-                  </span>
-                  <span className="in-wave-12-small">years</span>
-                </h1>
-                <h4 className="uk-margin-top uk-margin-remove-bottom">
-                  UK Regulated
-                </h4>
-                <p className="uk-text-muted uk-margin-remove-top">Since 2005</p>
-              </div>
-            </div>
-
-            <div>
-              <div className="in-wave-12-counter">
-                <h1 className="uk-heading-medium uk-margin-remove">
-                  <span className="count" data-counter-end={18}>
-                    0
-                  </span>
-                  <span className="in-wave-12-small">K</span>
-                </h1>
-                <h4 className="uk-margin-top uk-margin-remove-bottom">
-                  Order per day
-                </h4>
-                <p className="uk-text-muted uk-margin-remove-top">
-                  Fast execution
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <div className="in-wave-12-counter">
-                <h1 className="uk-heading-medium uk-margin-remove">
-                  <span className="count" data-counter-end={24}>
-                    0
-                  </span>
-                  <span className="in-wave-12-small">/5</span>
-                </h1>
-                <h4 className="uk-margin-top uk-margin-remove-bottom">
-                  Customer support
-                </h4>
-                <p className="uk-text-muted uk-margin-remove-top">
-                  Account manager
-                </p>
-              </div>
-            </div> */}
           </div>
           <div
             className="uk-grid uk-flex uk-flex-center uk-background-contain uk-background-top-center in-testimoni-wrap uk-background-image@m"
@@ -555,12 +328,16 @@ const Homepage3 = () => {
                 className="uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@m uk-margin-medium-top in-wave-14-products"
                 data-uk-grid
               >
-                {products.map((product,index) => {
+                {products.map((product, index) => {
                   return (
                     <div key={index}>
                       <div className="uk-card uk-card-body uk-card-small uk-card-default uk-border-rounded uk-flex uk-flex-middle">
                         <div className="uk-margin-small-right">
-                          <i className={`in-icon-wrap small ${product.iconColor}`}>{product.iconTxt}</i>
+                          <i
+                            className={`in-icon-wrap small ${product.iconColor}`}
+                          >
+                            {product.iconTxt}
+                          </i>
                         </div>
                         <div>
                           <h6 className="uk-margin-remove">{product.title}</h6>
@@ -569,97 +346,7 @@ const Homepage3 = () => {
                     </div>
                   );
                 })}
-
-                {/* <div>
-                  <div className="uk-card uk-card-body uk-card-small uk-card-default uk-border-rounded uk-flex uk-flex-middle">
-                    <div className="uk-margin-small-right">
-                      <i className="in-icon-wrap small orange">EQ</i>
-                    </div>
-                    <div>
-                      <h6 className="uk-margin-remove">Stocks</h6>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="uk-card uk-card-body uk-card-small uk-card-default uk-border-rounded uk-flex uk-flex-middle">
-                    <div className="uk-margin-small-right">
-                      <i className="in-icon-wrap small green">ETF</i>
-                    </div>
-                    <div>
-                      <h6 className="uk-margin-remove">ETFs</h6>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="uk-card uk-card-body uk-card-small uk-card-default uk-border-rounded uk-flex uk-flex-middle">
-                    <div className="uk-margin-small-right">
-                      <i className="in-icon-wrap small navy">BO</i>
-                    </div>
-                    <div>
-                      <h6 className="uk-margin-remove">Bonds</h6>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="uk-card uk-card-body uk-card-small uk-card-default uk-border-rounded uk-flex uk-flex-middle">
-                    <div className="uk-margin-small-right">
-                      <i className="in-icon-wrap small purple">MF</i>
-                    </div>
-                    <div>
-                      <h6 className="uk-margin-remove">Mutual Funds</h6>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="uk-card uk-card-body uk-card-small uk-card-default uk-border-rounded uk-flex uk-flex-middle">
-                    <div className="uk-margin-small-right">
-                      <i className="in-icon-wrap small blue">FX</i>
-                    </div>
-                    <div>
-                      <h6 className="uk-margin-remove">Forex</h6>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="uk-card uk-card-body uk-card-small uk-card-default uk-border-rounded uk-flex uk-flex-middle">
-                    <div className="uk-margin-small-right">
-                      <i className="in-icon-wrap small red">CFD</i>
-                    </div>
-                    <div>
-                      <h6 className="uk-margin-remove">CFDs</h6>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="uk-card uk-card-body uk-card-small uk-card-default uk-border-rounded uk-flex uk-flex-middle">
-                    <div className="uk-margin-small-right">
-                      <i className="in-icon-wrap small grey">COM</i>
-                    </div>
-                    <div>
-                      <h6 className="uk-margin-remove">Commodities</h6>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="uk-card uk-card-body uk-card-small uk-card-default uk-border-rounded uk-flex uk-flex-middle">
-                    <div className="uk-margin-small-right">
-                      <i className="in-icon-wrap small gold">FU</i>
-                    </div>
-                    <div>
-                      <h6 className="uk-margin-remove">Futures</h6>
-                    </div>
-                  </div>
-                </div> */}
-
               </div>
-
               <div className="uk-grid uk-flex uk-flex-center uk-margin-large-top">
                 <div className="uk-width-3-5@m">
                   <div className="uk-card uk-card-default uk-card-body uk-text-center uk-border-rounded uk-box-shadow-small in-wave-14-card">

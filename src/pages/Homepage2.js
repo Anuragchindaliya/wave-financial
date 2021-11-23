@@ -135,7 +135,7 @@ const Homepage2 = () => {
                 className="uk-grid-medium uk-child-width-1-2@s uk-child-width-1-2@m uk-margin-medium-top uk-margin-medium-bottom"
                 data-uk-grid
               >
-                {features.map((feature,index) => {
+                {features.map((feature, index) => {
                   return (
                     <div key={index}>
                       <div className="uk-card uk-card-default uk-card-body uk-border-rounded">
@@ -156,73 +156,6 @@ const Homepage2 = () => {
                     </div>
                   );
                 })}
-
-                {/* <div>
-                  <div className="uk-card uk-card-default uk-card-body uk-border-rounded">
-                    <div className="uk-flex uk-flex-middle">
-                      <div className="uk-margin-small-right">
-                        <i className="fas fa-award fa-2x in-icon-wrap small transparent" />
-                      </div>
-                      <div>
-                        <h4 className="uk-margin-remove">Best reputation</h4>
-                      </div>
-                    </div>
-                    <p className="uk-margin-small-top">
-                      Adipisci sed quia numquam eius modi tempora incidunt ut
-                      labore et dolore consequuntur magni dolores.
-                    </p>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="uk-card uk-card-default uk-card-body uk-border-rounded">
-                    <div className="uk-flex uk-flex-middle">
-                      <div className="uk-margin-small-right">
-                        <i className="fas fa-tools fa-2x in-icon-wrap small transparent" />
-                      </div>
-                      <div>
-                        <h4 className="uk-margin-remove">Advanced tools</h4>
-                      </div>
-                    </div>
-                    <p className="uk-margin-small-top">
-                      Adipisci sed quia numquam eius modi tempora incidunt ut
-                      labore et dolore consequuntur magni dolores.
-                    </p>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="uk-card uk-card-default uk-card-body uk-border-rounded">
-                    <div className="uk-flex uk-flex-middle">
-                      <div className="uk-margin-small-right">
-                        <i className="fas fa-users fa-2x in-icon-wrap small transparent" />
-                      </div>
-                      <div>
-                        <h4 className="uk-margin-remove">480,000+ clients</h4>
-                      </div>
-                    </div>
-                    <p className="uk-margin-small-top">
-                      Adipisci sed quia numquam eius modi tempora incidunt ut
-                      labore et dolore consequuntur magni dolores.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div className="uk-card uk-card-default uk-card-body uk-border-rounded">
-                    <div className="uk-flex uk-flex-middle">
-                      <div className="uk-margin-small-right">
-                        <i className="fas fa-building fa-2x in-icon-wrap small transparent" />
-                      </div>
-                      <div>
-                        <h4 className="uk-margin-remove">Worldwide office</h4>
-                      </div>
-                    </div>
-                    <p className="uk-margin-small-top">
-                      Adipisci sed quia numquam eius modi tempora incidunt ut
-                      labore et dolore consequuntur magni dolores.
-                    </p>
-                  </div>
-                </div> */}
               </div>
               <p className="uk-text-small uk-text-muted uk-margin-large-bottom">
                 <span className="uk-label uk-text-small uk-text-uppercase uk-border-pill uk-margin-small-right">
@@ -344,7 +277,7 @@ const Homepage2 = () => {
               <div className="uk-grid-large uk-child-width-1-2@m" data-uk-grid>
                 <div>
                   <ul className="uk-list uk-list-divider in-front-news">
-                    {blog.map((post,index) => {
+                    {blog.map((post, index) => {
                       return (
                         <li key={index}>
                           <div
@@ -375,90 +308,6 @@ const Homepage2 = () => {
                         </li>
                       );
                     })}
-                    {/* <li>
-                      <div
-                        className="uk-grid-collapse uk-flex uk-flex-middle"
-                        data-uk-grid
-                      >
-                        <div className="uk-width-auto">
-                          <img
-                            className="uk-border-rounded"
-                            src="assets/img/in-widget-image-1.jpg"
-                            alt="sample"
-                            width={94}
-                            height={94}
-                          />
-                        </div>
-                        <div className="uk-width-expand uk-margin-medium-left">
-                          <a href="/#">
-                            <span className="uk-text-lead uk-display-block uk-margin-small-bottom">
-                              ​Bank of England rate preview: markets expecting
-                              QE expansion​
-                            </span>
-                          </a>
-                          <span className="uk-article-meta uk-text-small">
-                            <i className="fas fa-clock fa-sm uk-margin-small-right" />
-                            Wednesday 17 June 2020 16:25
-                          </span>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        className="uk-grid-collapse uk-flex uk-flex-middle"
-                        data-uk-grid
-                      >
-                        <div className="uk-width-auto">
-                          <img
-                            className="uk-border-rounded"
-                            src="assets/img/in-widget-image-2.jpg"
-                            alt="sample"
-                            width={94}
-                            height={94}
-                          />
-                        </div>
-                        <div className="uk-width-expand uk-margin-medium-left">
-                          <a href="/#">
-                            <span className="uk-text-lead uk-display-block uk-margin-small-bottom">
-                              ​EUR/USD, GBP/USD, and AUD/USD finding support
-                              after recent declines​
-                            </span>
-                          </a>
-                          <span className="uk-article-meta uk-text-small">
-                            <i className="fas fa-clock fa-sm uk-margin-small-right" />
-                            Wednesday 17 June 2020 16:11
-                          </span>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div
-                        className="uk-grid-collapse uk-flex uk-flex-middle"
-                        data-uk-grid
-                      >
-                        <div className="uk-width-auto">
-                          <img
-                            className="uk-border-rounded"
-                            src="assets/img/in-widget-image-3.jpg"
-                            alt="sample"
-                            width={94}
-                            height={94}
-                          />
-                        </div>
-                        <div className="uk-width-expand uk-margin-medium-left">
-                          <a href="/#">
-                            <span className="uk-text-lead uk-display-block uk-margin-small-bottom">
-                              ​Where next for the SPH share price after being
-                              dropped by STI Index?​
-                            </span>
-                          </a>
-                          <span className="uk-article-meta uk-text-small">
-                            <i className="fas fa-clock fa-sm uk-margin-small-right" />
-                            Wednesday 17 June 2020 15:15
-                          </span>
-                        </div>
-                      </div>
-                    </li> */}
                   </ul>
                 </div>
                 <div>

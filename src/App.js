@@ -22,28 +22,17 @@ import Roadmap from "./pages/Roadmap";
 import Legaldocs from "./pages/Legaldocs";
 import SignUp from "./pages/SignUp";
 
-import {
-  
-  withRouter,
-  
-  Route,
-  Switch,
-} from "react-router-dom";
-
+import { withRouter, Route, Switch } from "react-router-dom";
 
 const App = withRouter((props) => {
-  
-  
   const [displayHeader, setHeader] = useState(true);
-  
+
   useEffect(() => {
     const hideLocations = ["/sign-up"];
     setHeader(hideLocations.includes(props.location.pathname) ? false : true);
-    
   }, [props.location.pathname]);
 
   return (
-
     <div>
         <ScrollToTop />
         {displayHeader?<Header/>:null}
@@ -68,7 +57,6 @@ const App = withRouter((props) => {
           </Switch>
           {displayHeader?<Footer/>:null}
         {/* <Footer /> */}
-      
     </div>
   );
 });

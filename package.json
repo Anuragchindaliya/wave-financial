@@ -1,13 +1,12 @@
 {
   "name": "wave",
-  "homepage":"https://anuragchindaliya.github.io/wave-financial/",
+  "homepag": "https://anuragchindaliya.github.io/wave-financial/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "gh-pages": "^3.2.3",
     "html-react-parser": "^1.2.6",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
@@ -41,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

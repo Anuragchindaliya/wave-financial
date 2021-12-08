@@ -21,6 +21,7 @@ import Homepage4 from "./pages/Homepage4";
 import Roadmap from "./pages/Roadmap";
 import Legaldocs from "./pages/Legaldocs";
 import SignUp from "./pages/SignUp";
+import NotFound from "pages/NotFound";
 
 import { withRouter, Route, Switch } from "react-router-dom";
 
@@ -34,29 +35,30 @@ const App = withRouter((props) => {
 
   return (
     <div>
-        <ScrollToTop />
-        {displayHeader?<Header/>:null}
-        {/* <Header /> */}
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/markets" component={Markets} />
-            <Route path="/about" component={About} />
-            <Route path="/education" component={Education} />
-            <Route path="/blog" component={Blog} />
-            <Route path="/careers" component={Careers} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/blog-article" component={Sblog} />
-            <Route path="/customers" component={Customers} />
-            <Route path="/help-center" component={Helpcenter} />
-            <Route path="/home2" component={Homepage2} />
-            <Route path="/home3" component={Homepage3} />
-            <Route path="/home4" component={Homepage4} />
-            <Route path="/roadmap" component={Roadmap} />
-            <Route path="/legal-docs" component={Legaldocs} />
-            <Route path="/sign-up" component={SignUp} />
-          </Switch>
-          {displayHeader?<Footer/>:null}
-        {/* <Footer /> */}
+      <ScrollToTop />
+      {displayHeader ? <Header /> : null}
+
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/markets" component={Markets} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/education" component={Education} />
+        <Route exact path="/blog" component={Blog} />
+        <Route exact path="/careers" component={Careers} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/blog-article" component={Sblog} />
+        <Route exact path="/customers" component={Customers} />
+        <Route exact path="/help-center" component={Helpcenter} />
+        <Route exact path="/home2" component={Homepage2} />
+        <Route exact path="/home3" component={Homepage3} />
+        <Route exact path="/home4" component={Homepage4} />
+        <Route exact path="/roadmap" component={Roadmap} />
+        <Route exact path="/legal-docs" component={Legaldocs} />
+        <Route exact path="/sign-up" component={SignUp} />
+        {/* show Homepage */}
+        <Route exact path="*" component={NotFound} />
+      </Switch>
+      {displayHeader ? <Footer /> : null}
     </div>
   );
 });
